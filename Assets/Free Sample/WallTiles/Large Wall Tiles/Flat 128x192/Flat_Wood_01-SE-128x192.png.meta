@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: cba780082a5e690489eea834724f1630
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8682b3e8ae863a540a08de61fa843e9f
+      internalID: 1281973885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3383efb15b1801a4c9547ecad8bd693b
+      internalID: -1038620957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8435082c8253f7a4ca78bf9b576f0dc8
+      internalID: -641515447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257bf970a6ff092439571dfef7e5526f
+      internalID: -1867126200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e59b3ab484b853409c24f923921d2c2
+      internalID: -110335854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46296bdafdf801408d3194b2e3031ba
+      internalID: 1866990734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6783548d9e90a3c4c93873a527bce908
+      internalID: 902456633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5f7d75b656253448199cbab6f986b0
+      internalID: -96540575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706cd0a3d0831c547b070e76233805a3
+      internalID: -1391426841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718d4e951eabb3647916bcc61c4135aa
+      internalID: -2089026288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d1c367eef54b546b67d64483ffbbec
+      internalID: 1150815230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0aa179b6b273e47a1971b3381423ec
+      internalID: -279843289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d980bb04da290c34a8e0d9c15797e122
+      internalID: 795883139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a85af52513e3e4a978dc69a2db2c6f
+      internalID: 1720943198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d997eed62ed1b49aed128cacc5b993
+      internalID: -1778520776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bd438b7516fc448b24217ff5248512
+      internalID: 201506204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee70f955fc8eb9d428d6631fff598ca5
+      internalID: -97506780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6d0472ec1a99d4b86eda9f60315601
+      internalID: 905827837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b1d8d6da0d2e0458dc087e45c6ceb8
+      internalID: 633334894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7d6ed9edb566746899a42a974b513e
+      internalID: -248739704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d722176732ef0ee489531e9269b46b61
+      internalID: -1579436620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: df71dd1cfff7d834cbc918ab8c070745
+      internalID: 2119328354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9edbad8fd45a042a15bc452a8422bc
+      internalID: -19506919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Wood_01-SE-128x192_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d78f7145839f049a0c8a30df7113e8
+      internalID: 155886873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flat_Wood_01-SE-128x192_0: 1281973885
+      Flat_Wood_01-SE-128x192_1: -1038620957
+      Flat_Wood_01-SE-128x192_10: -687979771
+      Flat_Wood_01-SE-128x192_11: 902456633
+      Flat_Wood_01-SE-128x192_12: -96540575
+      Flat_Wood_01-SE-128x192_13: -1391426841
+      Flat_Wood_01-SE-128x192_14: -2089026288
+      Flat_Wood_01-SE-128x192_15: 1150815230
+      Flat_Wood_01-SE-128x192_16: -279843289
+      Flat_Wood_01-SE-128x192_17: -2020083651
+      Flat_Wood_01-SE-128x192_18: -963633920
+      Flat_Wood_01-SE-128x192_19: -700779392
+      Flat_Wood_01-SE-128x192_2: -641515447
+      Flat_Wood_01-SE-128x192_20: 756115942
+      Flat_Wood_01-SE-128x192_21: 1677037909
+      Flat_Wood_01-SE-128x192_22: 795883139
+      Flat_Wood_01-SE-128x192_23: 1720943198
+      Flat_Wood_01-SE-128x192_24: -1778520776
+      Flat_Wood_01-SE-128x192_25: 201506204
+      Flat_Wood_01-SE-128x192_26: -97506780
+      Flat_Wood_01-SE-128x192_27: 905827837
+      Flat_Wood_01-SE-128x192_28: -1965616591
+      Flat_Wood_01-SE-128x192_29: 457574604
+      Flat_Wood_01-SE-128x192_3: -1867126200
+      Flat_Wood_01-SE-128x192_30: -989318759
+      Flat_Wood_01-SE-128x192_31: 2056476795
+      Flat_Wood_01-SE-128x192_32: 790600140
+      Flat_Wood_01-SE-128x192_33: 633334894
+      Flat_Wood_01-SE-128x192_34: -248739704
+      Flat_Wood_01-SE-128x192_35: -1579436620
+      Flat_Wood_01-SE-128x192_36: 2119328354
+      Flat_Wood_01-SE-128x192_37: -19506919
+      Flat_Wood_01-SE-128x192_38: 155886873
+      Flat_Wood_01-SE-128x192_4: -110335854
+      Flat_Wood_01-SE-128x192_5: 1866990734
+      Flat_Wood_01-SE-128x192_6: 1148289470
+      Flat_Wood_01-SE-128x192_7: -1233514999
+      Flat_Wood_01-SE-128x192_8: 374518317
+      Flat_Wood_01-SE-128x192_9: -99554485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

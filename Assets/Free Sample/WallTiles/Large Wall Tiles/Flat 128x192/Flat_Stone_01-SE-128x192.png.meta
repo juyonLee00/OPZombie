@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: 3e554cff5c38c0e448b6e4a7c26c46d9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c07a71609400b744b721a2edb98d0d5
+      internalID: 95653100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a51bca47832b649a8c937e5f7bdaa3
+      internalID: -2061159996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03511d6fea547c24e81eab4fbc776e61
+      internalID: 1542790883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8625bc3267726439b790dab38e6ee4
+      internalID: -1681835308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec97997ce9f4824aa275df8e6419e17
+      internalID: 1137802590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cd007d3552a844c9a71278163221d3
+      internalID: -1473965490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45ce294dae3789498d2697bb1bc9e3c
+      internalID: 649747138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd92b0a95e7a374faefe5ce0ff0cb31
+      internalID: 1041874201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b134cf76472e09e40ad03e612cd5697f
+      internalID: 98827777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c8a03694b3b734d800cadf265b9f2a
+      internalID: 978848529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38ba0b0b19d5b14c9eb4d1388e6b552
+      internalID: -1014342202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3f69d16d0a0a84abf73c11fab36dab
+      internalID: 62926625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d2627ca4a30214a98e40f9f32065d1
+      internalID: -722968150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970968a7c49bef47999f04e8aefd41b
+      internalID: -1892403226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e8cba8bd0dab9448964c94a6dc838b
+      internalID: -1510115286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25a8f5538ffabc419e959800fa00dde
+      internalID: -152674489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd152999cda2aa3408b9a94d21315bbf
+      internalID: 1135086249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4537bd6b0667f1446a16a9a66487a022
+      internalID: -1609394292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa6154c9c5edda4da10c0a4f86f973c
+      internalID: 512281385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6165a5904acedae4da9d90af485a6651
+      internalID: 1988493143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7774bf5cec260bd4d9a56fc2e780cb7c
+      internalID: -506334318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa83ce1bf8cd344f8d7d129f6a8af97
+      internalID: 492155583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 31.012634}
+        - {x: -64, y: -96}
+        - {x: 64, y: -31.375671}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff669789e0f2c74891b6918281cb91a
+      internalID: -373970077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Stone_01-SE-128x192_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -31.73877}
+        - {x: 64, y: -96}
+        - {x: 64, y: 31.738708}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11497fefe5153024f89f843fb6ebf544
+      internalID: -1882875293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flat_Stone_01-SE-128x192_0: 95653100
+      Flat_Stone_01-SE-128x192_1: -2061159996
+      Flat_Stone_01-SE-128x192_10: -1508192310
+      Flat_Stone_01-SE-128x192_11: 649747138
+      Flat_Stone_01-SE-128x192_12: 1041874201
+      Flat_Stone_01-SE-128x192_13: 98827777
+      Flat_Stone_01-SE-128x192_14: 978848529
+      Flat_Stone_01-SE-128x192_15: -1014342202
+      Flat_Stone_01-SE-128x192_16: 62926625
+      Flat_Stone_01-SE-128x192_17: 1865677727
+      Flat_Stone_01-SE-128x192_18: 1693466784
+      Flat_Stone_01-SE-128x192_19: -1672807633
+      Flat_Stone_01-SE-128x192_2: 1542790883
+      Flat_Stone_01-SE-128x192_20: 1079328088
+      Flat_Stone_01-SE-128x192_21: -563722519
+      Flat_Stone_01-SE-128x192_22: -722968150
+      Flat_Stone_01-SE-128x192_23: -1892403226
+      Flat_Stone_01-SE-128x192_24: -1510115286
+      Flat_Stone_01-SE-128x192_25: -152674489
+      Flat_Stone_01-SE-128x192_26: 1135086249
+      Flat_Stone_01-SE-128x192_27: -1609394292
+      Flat_Stone_01-SE-128x192_28: 1887047282
+      Flat_Stone_01-SE-128x192_29: 1916953749
+      Flat_Stone_01-SE-128x192_3: -1681835308
+      Flat_Stone_01-SE-128x192_30: 205653068
+      Flat_Stone_01-SE-128x192_31: -1639949039
+      Flat_Stone_01-SE-128x192_32: -1480430507
+      Flat_Stone_01-SE-128x192_33: 512281385
+      Flat_Stone_01-SE-128x192_34: 1988493143
+      Flat_Stone_01-SE-128x192_35: -506334318
+      Flat_Stone_01-SE-128x192_36: 492155583
+      Flat_Stone_01-SE-128x192_37: -373970077
+      Flat_Stone_01-SE-128x192_38: -1882875293
+      Flat_Stone_01-SE-128x192_4: 1137802590
+      Flat_Stone_01-SE-128x192_5: -1473965490
+      Flat_Stone_01-SE-128x192_6: -460942630
+      Flat_Stone_01-SE-128x192_7: -251731054
+      Flat_Stone_01-SE-128x192_8: -2032020641
+      Flat_Stone_01-SE-128x192_9: 1191422423
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
