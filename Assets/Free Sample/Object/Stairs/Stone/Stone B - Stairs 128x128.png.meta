@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -64}
+        - {x: 64, y: -31}
+        - {x: 64, y: 31}
+        - {x: 2, y: 62}
+        - {x: -5, y: 59}
+        - {x: -5, y: 53}
+        - {x: -13, y: 49}
+        - {x: -13, y: 41}
+        - {x: -21, y: 37}
+        - {x: -21, y: 29}
+        - {x: -29, y: 25}
+        - {x: -29, y: 17}
+        - {x: -38, y: 12}
+        - {x: -38, y: 5}
+        - {x: -46, y: 0}
+        - {x: -46, y: -7}
+        - {x: -54, y: -12}
+        - {x: -54, y: -19}
+        - {x: -62, y: -24}
+        - {x: -62, y: -32}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f446d17283500a4da66215774c96752
+      internalID: 1882626090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -63}
+        - {x: 62, y: -32}
+        - {x: 62, y: -24}
+        - {x: 54, y: -19}
+        - {x: 54, y: -12}
+        - {x: 46, y: -7}
+        - {x: 46, y: 0}
+        - {x: 38, y: 4}
+        - {x: 38, y: 12}
+        - {x: 29, y: 17}
+        - {x: 29, y: 25}
+        - {x: 21, y: 29}
+        - {x: 21, y: 36}
+        - {x: 13, y: 40}
+        - {x: 13, y: 49}
+        - {x: 5, y: 53}
+        - {x: 5, y: 59}
+        - {x: -1, y: 62}
+        - {x: -64, y: 31}
+        - {x: -64, y: -31}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72716a1757ada63478998a6c8768ad26
+      internalID: -759172550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: -33}
+        - {x: -2, y: -64}
+        - {x: 63, y: -32}
+        - {x: 63, y: -25}
+        - {x: -48, y: 31}
+        - {x: -51, y: 30}
+        - {x: -56, y: 33}
+        - {x: -64, y: 29}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b4c6f2c72729c43875158834c0f1c0
+      internalID: 1217540522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -64}
+        - {x: 64, y: -33}
+        - {x: 64, y: 29}
+        - {x: 57, y: 33}
+        - {x: 51, y: 30}
+        - {x: 49, y: 31}
+        - {x: -63, y: -24}
+        - {x: -63, y: -32}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c0255fb2b5d5148a2def590d249cff
+      internalID: 512175986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -56}
+        - {x: 0, y: -56}
+        - {x: 8, y: -52}
+        - {x: 8, y: -49}
+        - {x: -54, y: -18}
+        - {x: -63, y: -22}
+        - {x: -63, y: -26}
+      - - {x: -56, y: -13}
+        - {x: -56, y: -11}
+        - {x: -46, y: -6}
+        - {x: 16, y: -37}
+        - {x: 16, y: -40}
+        - {x: 8, y: -44}
+        - {x: 5, y: -44}
+      - - {x: -48, y: -1}
+        - {x: -48, y: 1}
+        - {x: -38, y: 6}
+        - {x: 24, y: -25}
+        - {x: 24, y: -28}
+        - {x: 16, y: -32}
+        - {x: 13, y: -32}
+      - - {x: 21, y: -20}
+        - {x: -40, y: 11}
+        - {x: -40, y: 13}
+        - {x: -30, y: 18}
+        - {x: 33, y: -13}
+        - {x: 33, y: -15}
+        - {x: 24, y: -20}
+      - - {x: -32, y: 23}
+        - {x: -32, y: 25}
+        - {x: -22, y: 30}
+        - {x: 41, y: -1}
+        - {x: 41, y: -3}
+        - {x: 32, y: -8}
+        - {x: 29, y: -8}
+      - - {x: -23, y: 36}
+        - {x: -23, y: 38}
+        - {x: -14, y: 42}
+        - {x: 49, y: 11}
+        - {x: 49, y: 9}
+        - {x: 40, y: 4}
+      - - {x: -15, y: 48}
+        - {x: -15, y: 50}
+        - {x: -6, y: 54}
+        - {x: 57, y: 23}
+        - {x: 57, y: 21}
+        - {x: 48, y: 17}
+      - - {x: -7, y: 58}
+        - {x: -7, y: 60}
+        - {x: 2, y: 64}
+        - {x: 64, y: 33}
+        - {x: 64, y: 30}
+        - {x: 56, y: 26}
+      physicsShape:
+      - - {x: 0, y: -56}
+        - {x: 64, y: 34}
+        - {x: 0, y: 64}
+        - {x: -64, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f5fdc0df4c02946a597f2e1012e84a
+      internalID: -245753911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 30}
+        - {x: -56, y: 27}
+        - {x: 7, y: 58}
+        - {x: 7, y: 60}
+        - {x: -2, y: 64}
+        - {x: -64, y: 33}
+      - - {x: -57, y: 21}
+        - {x: -57, y: 23}
+        - {x: 6, y: 54}
+        - {x: 15, y: 50}
+        - {x: 15, y: 48}
+        - {x: -48, y: 17}
+      - - {x: -49, y: 9}
+        - {x: -49, y: 11}
+        - {x: 14, y: 42}
+        - {x: 23, y: 37}
+        - {x: 23, y: 36}
+        - {x: -40, y: 5}
+      - - {x: -41, y: -3}
+        - {x: -41, y: -1}
+        - {x: 22, y: 30}
+        - {x: 32, y: 25}
+        - {x: 32, y: 23}
+        - {x: -30, y: -8}
+      - - {x: -33, y: -15}
+        - {x: -33, y: -13}
+        - {x: 30, y: 18}
+        - {x: 40, y: 13}
+        - {x: 40, y: 11}
+        - {x: -21, y: -20}
+        - {x: -23, y: -20}
+      - - {x: -24, y: -28}
+        - {x: -24, y: -25}
+        - {x: -24, y: -25}
+        - {x: 39, y: 6}
+        - {x: 48, y: 1}
+        - {x: 48, y: -1}
+        - {x: -13, y: -32}
+        - {x: -16, y: -32}
+      - - {x: -16, y: -39}
+        - {x: -16, y: -37}
+        - {x: 47, y: -6}
+        - {x: 56, y: -11}
+        - {x: 56, y: -13}
+        - {x: -5, y: -44}
+        - {x: -7, y: -44}
+      - - {x: -8, y: -52}
+        - {x: -8, y: -49}
+        - {x: 54, y: -18}
+        - {x: 64, y: -23}
+        - {x: 64, y: -25}
+        - {x: 3, y: -56}
+        - {x: 0, y: -56}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: becee3662fb28d442b258c5d7e889f1f
+      internalID: 570546438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -64}
+        - {x: 64, y: -31}
+        - {x: 64, y: 31}
+        - {x: 2, y: 62}
+        - {x: -5, y: 59}
+        - {x: -5, y: 53}
+        - {x: -13, y: 49}
+        - {x: -13, y: 41}
+        - {x: -21, y: 37}
+        - {x: -21, y: 29}
+        - {x: -29, y: 25}
+        - {x: -29, y: 17}
+        - {x: -38, y: 12}
+        - {x: -38, y: 5}
+        - {x: -46, y: 0}
+        - {x: -46, y: -7}
+        - {x: -54, y: -12}
+        - {x: -54, y: -19}
+        - {x: -62, y: -24}
+        - {x: -62, y: -32}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821e0ef888c46e244b3b698ada384b83
+      internalID: -1054739552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -63}
+        - {x: 62, y: -32}
+        - {x: 62, y: -24}
+        - {x: 54, y: -19}
+        - {x: 54, y: -12}
+        - {x: 46, y: -7}
+        - {x: 46, y: 0}
+        - {x: 38, y: 4}
+        - {x: 38, y: 12}
+        - {x: 29, y: 17}
+        - {x: 29, y: 25}
+        - {x: 21, y: 29}
+        - {x: 21, y: 36}
+        - {x: 13, y: 40}
+        - {x: 13, y: 49}
+        - {x: 5, y: 53}
+        - {x: 5, y: 59}
+        - {x: -1, y: 62}
+        - {x: -64, y: 31}
+        - {x: -64, y: -31}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438040bb2a578d84b9c230ff234d3053
+      internalID: 366232675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: -33}
+        - {x: -2, y: -64}
+        - {x: 63, y: -32}
+        - {x: 63, y: -25}
+        - {x: -48, y: 31}
+        - {x: -51, y: 30}
+        - {x: -56, y: 33}
+        - {x: -64, y: 29}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 63, y: -33}
+        - {x: 63, y: -24}
+        - {x: -49, y: 31}
+        - {x: -64, y: 28}
+        - {x: -64, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38006138dbefdc54299ce3f94018f0e5
+      internalID: 981450820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -64}
+        - {x: 64, y: -33}
+        - {x: 64, y: 29}
+        - {x: 57, y: 33}
+        - {x: 51, y: 30}
+        - {x: 49, y: 31}
+        - {x: -63, y: -24}
+        - {x: -63, y: -32}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8995339f3ff7174d9b9fa1a80ccf890
+      internalID: -608569425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 29}
+        - {x: -3, y: -2}
+        - {x: 0, y: -2}
+        - {x: 1, y: -1}
+        - {x: 29, y: -16}
+        - {x: 33, y: -16}
+        - {x: 56, y: -28}
+        - {x: 64, y: -24}
+        - {x: 64, y: -21}
+        - {x: -46, y: 34}
+        - {x: -48, y: 33}
+        - {x: -54, y: 36}
+        - {x: -64, y: 31}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c717611a4d9c568448602d2947020f13
+      internalID: -887885192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone B - Stairs 128x128_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 29}
+        - {x: 3, y: -2}
+        - {x: 0, y: -2}
+        - {x: 0, y: -1}
+        - {x: -30, y: -16}
+        - {x: -33, y: -16}
+        - {x: -55, y: -28}
+        - {x: -64, y: -24}
+        - {x: -64, y: -21}
+        - {x: 47, y: 34}
+        - {x: 49, y: 33}
+        - {x: 54, y: 36}
+        - {x: 64, y: 31}
+      physicsShape:
+      - - {x: 0, y: -64}
+        - {x: 64, y: 0}
+        - {x: 0, y: 64}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2900d64edfe92e409fdaf0e4e497ecc
+      internalID: 268218541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +665,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stone B - Stairs 128x128_0: 1882626090
+      Stone B - Stairs 128x128_1: -759172550
+      Stone B - Stairs 128x128_10: 784774874
+      Stone B - Stairs 128x128_11: -1054739552
+      Stone B - Stairs 128x128_12: 366232675
+      Stone B - Stairs 128x128_13: 981450820
+      Stone B - Stairs 128x128_14: -608569425
+      Stone B - Stairs 128x128_15: -887885192
+      Stone B - Stairs 128x128_16: 268218541
+      Stone B - Stairs 128x128_2: 1217540522
+      Stone B - Stairs 128x128_3: 512175986
+      Stone B - Stairs 128x128_4: -245753911
+      Stone B - Stairs 128x128_5: 570546438
+      Stone B - Stairs 128x128_6: 770033597
+      Stone B - Stairs 128x128_7: 2117568939
+      Stone B - Stairs 128x128_8: -1816242749
+      Stone B - Stairs 128x128_9: 1268674944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
