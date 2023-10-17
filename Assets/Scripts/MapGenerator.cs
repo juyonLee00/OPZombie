@@ -10,7 +10,6 @@ public class MapGenerator : MonoBehaviour
     public int mapWidth; // ¸Ê °¡·Î Å©±â
     public int mapHeight; // ¸Ê ¼¼·Î Å©±â
     public int totalFloor;
-    public float floorHeight;
 
     public List<GameObject> floors = new List<GameObject>();
 
@@ -27,7 +26,7 @@ public class MapGenerator : MonoBehaviour
         {
             mapGrid = new int[mapWidth, mapHeight];
             GenerateMap();
-            InstantiateRooms(i * floorHeight);
+            InstantiateRooms();
         }
     }
 
@@ -52,7 +51,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
-    void InstantiateRooms(float height)
+    void InstantiateRooms()
     {
         GameObject floor = new GameObject("Floor");
         floor.transform.position = Vector3.zero;
@@ -64,7 +63,7 @@ public class MapGenerator : MonoBehaviour
             {
                 if (mapGrid[x, y] != -1)
                 {
-                    Vector3 positionIsoMetric = new Vector3((x - y) * 4f, (-x - y) * 2f + height, y - x);
+                    Vector3 positionIsoMetric = new Vector3((x - y) * 4f, (-x - y) * 2f, y - x);
                     GameObject roomInstance = Instantiate(roomPrefabs[mapGrid[x, y]], positionIsoMetric, Quaternion.identity);
                     roomInstance.transform.parent = floor.transform;
                     UpdateSortingOrder(roomInstance);
