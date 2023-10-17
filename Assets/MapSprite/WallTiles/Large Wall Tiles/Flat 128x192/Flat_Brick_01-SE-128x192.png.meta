@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: 273dc116ed4906642a8e5415e2fe5470
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e008e36f3b5d14990270602af006a9
+      internalID: -1589938992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03603b549698b8c49b60fabe4cd80929
+      internalID: -1016230776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5a837c39528bb4586aed6da10d373f
+      internalID: -23070844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbc60fde2956874ebb3e94634551082
+      internalID: -1858056886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81f1063236f7824aa8eacae9bf4ce6d
+      internalID: -1908969682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04b91e69d311374a8f0ddfd16a5ca47
+      internalID: 2121992564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d003281c3ff3d4ab98a7021d927d42
+      internalID: -1622409796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ace375752ef384f8630649530a2f50
+      internalID: -2016940636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffcb70c2f7f42b409f7ccdc2ea31536
+      internalID: 626309288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2deaabb636a36a4a9bd077a86d5d131
+      internalID: -739016773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd460b00358a074ea6919660728a5da
+      internalID: -919438391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19efb48c35dd3bc48aa9cdfa98ea6a52
+      internalID: 937593999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f7b318d1bfe7e4e8c2a279bcde69cc
+      internalID: -427847102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7afb27c27d5dc4d8d8ca36c41d004d
+      internalID: -2038499071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4cad901e2155a4bab7c95c8848cdb4
+      internalID: -842951596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e575ceaeb41bff943a0c7a31ffccd516
+      internalID: 932215421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad795dc40ab0c499d87f02df9b219d
+      internalID: 1211768256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9052c42328e854880f41423d95a44b
+      internalID: -1728039651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604c5393103b8724fb3799aca0c6d5cb
+      internalID: -1957664762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29553a9462803f4ab93bdeb9d3d18ca
+      internalID: 1654496424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48fa977c5be6b040a6900294bfaa63a
+      internalID: -1613310493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde9b0f941f0e20409bb74f988c0effa
+      internalID: 1506775072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 32}
+        - {x: -64, y: -96}
+        - {x: 64, y: -32}
+        - {x: 64, y: 96}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f857ac1a795369479e9534845283bfa
+      internalID: -1925446947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flat_Brick_01-SE-128x192_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 96}
+        - {x: -64, y: -32}
+        - {x: 64, y: -96}
+        - {x: 64, y: 32}
+      physicsShape:
+      - - {x: 0, y: -96}
+        - {x: 64, y: 0}
+        - {x: 0, y: 96}
+        - {x: -64, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf602f81d8d1c0459750f64193740fa
+      internalID: 651712454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flat_Brick_01-SE-128x192_0: -1589938992
+      Flat_Brick_01-SE-128x192_1: -1016230776
+      Flat_Brick_01-SE-128x192_10: -1785167812
+      Flat_Brick_01-SE-128x192_11: -1622409796
+      Flat_Brick_01-SE-128x192_12: -2016940636
+      Flat_Brick_01-SE-128x192_13: 626309288
+      Flat_Brick_01-SE-128x192_14: -739016773
+      Flat_Brick_01-SE-128x192_15: -919438391
+      Flat_Brick_01-SE-128x192_16: 937593999
+      Flat_Brick_01-SE-128x192_17: 1055612220
+      Flat_Brick_01-SE-128x192_18: -938073319
+      Flat_Brick_01-SE-128x192_19: -479993715
+      Flat_Brick_01-SE-128x192_2: -23070844
+      Flat_Brick_01-SE-128x192_20: 1645346101
+      Flat_Brick_01-SE-128x192_21: 2021908393
+      Flat_Brick_01-SE-128x192_22: -427847102
+      Flat_Brick_01-SE-128x192_23: -2038499071
+      Flat_Brick_01-SE-128x192_24: -842951596
+      Flat_Brick_01-SE-128x192_25: 932215421
+      Flat_Brick_01-SE-128x192_26: 1211768256
+      Flat_Brick_01-SE-128x192_27: -1728039651
+      Flat_Brick_01-SE-128x192_28: 87163835
+      Flat_Brick_01-SE-128x192_29: 948695790
+      Flat_Brick_01-SE-128x192_3: -1858056886
+      Flat_Brick_01-SE-128x192_30: 1474634240
+      Flat_Brick_01-SE-128x192_31: 876064930
+      Flat_Brick_01-SE-128x192_32: 2119994295
+      Flat_Brick_01-SE-128x192_33: -1957664762
+      Flat_Brick_01-SE-128x192_34: 1654496424
+      Flat_Brick_01-SE-128x192_35: -1613310493
+      Flat_Brick_01-SE-128x192_36: 1506775072
+      Flat_Brick_01-SE-128x192_37: -1925446947
+      Flat_Brick_01-SE-128x192_38: 651712454
+      Flat_Brick_01-SE-128x192_4: -1908969682
+      Flat_Brick_01-SE-128x192_5: 2121992564
+      Flat_Brick_01-SE-128x192_6: -1983835685
+      Flat_Brick_01-SE-128x192_7: -1101193813
+      Flat_Brick_01-SE-128x192_8: -1117256301
+      Flat_Brick_01-SE-128x192_9: -1873384684
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
