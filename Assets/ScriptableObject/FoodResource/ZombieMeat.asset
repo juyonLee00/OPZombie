@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784dc1ab265d941a3add0cdc7a4fc11a, type: 3}
+  m_Name: ZombieMeat
+  m_EditorClassIdentifier: 
+  displayName: "\uC880\uBE44\uACE0\uAE30"
+  description: "\uD5C8\uAE30\uB294 \uD574\uACB0\uD558\uC9C0\uB9CC \uCCB4\uB825\uC774
+    \uAC10\uC18C\uD558\uACE0 \uD53C\uB85C\uB3C4\uAC00 \uC99D\uAC00\uD569\uB2C8\uB2E4. "
+  type: 1
+  icon: {fileID: 21300000, guid: 8d4a4962287a35747a98fe290e192b9d, type: 3}
+  dropPrefab: {fileID: 0}
+  canStack: 1
+  maxStackAmount: 5
+  consumables: []
