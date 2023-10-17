@@ -9,6 +9,7 @@ public class MapGenerator : MonoBehaviour
     private int[,] mapGrid; // ¸Ê ±×¸®µå
     public int mapWidth; // ¸Ê °¡·Î Å©±â
     public int mapHeight; // ¸Ê ¼¼·Î Å©±â
+    public int totalFloor;
     public float floorHeight;
 
     public List<GameObject> floors = new List<GameObject>();
@@ -16,7 +17,7 @@ public class MapGenerator : MonoBehaviour
     void Start()
     {
         mapGrid = new int[mapWidth, mapHeight];
-        GenerateFloors(3);
+        GenerateFloors(totalFloor);
         ActivateFloor(0);
     }
 
