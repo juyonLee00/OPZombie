@@ -103,7 +103,7 @@ public class UIManager : MonoBehaviour
 
     public void CloseAllPopupUI()
     {
-        while (popupStack.IsEmpty())
+        while (!popupStack.IsEmpty())
             ClosePopupUI();
     }
 
