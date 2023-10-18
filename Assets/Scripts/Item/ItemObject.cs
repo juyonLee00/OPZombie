@@ -13,8 +13,8 @@ public class ItemObject : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
-        /*인벤토리에 추가하고 오브젝트 삭제 - 합쳤을 때 주석 제거
+        
         Inventory.instance.AddItem(item);
-        Destroy(gameObject);*/
+        Destroy(gameObject);
     }
 }
