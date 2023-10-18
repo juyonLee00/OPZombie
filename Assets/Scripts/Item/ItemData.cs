@@ -21,6 +21,26 @@ public enum ConsumableType
     Condition//좀비 상태에서 회복 필요
 }
 
+public enum ItemTypeDetail
+{
+    MeatProtein,
+    FishProtein,
+    Fruit,
+    Vegetable,
+    Poison,
+    Meal,
+    Drink,
+    FoodCanCook,
+    FoodCantCook,
+    Iron,
+    Wood,
+    Bone,
+    FoodTool,
+    Weapon,
+    CanGetItem,
+    Bed
+}
+
 [System.Serializable]
 public class ItemDataConsumable
 {
@@ -35,6 +55,7 @@ public class ItemData : ScriptableObject
     public string displayName;
     public string description;
     public ItemType type;
+    public ItemTypeDetail typeDetail;
     public Sprite icon;
     public GameObject dropPrefab;
 
