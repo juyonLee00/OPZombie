@@ -13,6 +13,7 @@ public class PlayerStats
     public float moveSpeed = 5.0f;
     public float fatigability = 100.0f;
     public float attackSpeed = 1.0f;
+    public float zombieInfect = 100.0f;
     public bool isZombie = false;
     public bool isRunning = false;
     public bool isSleep = false;

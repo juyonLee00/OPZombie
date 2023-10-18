@@ -16,7 +16,27 @@ public class PlayerController : MonoBehaviour
     public event Action OnSleepEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action<Vector2> OnMoveEvent;
+    //TODO Ctrl 키 눌렀을 때 조준모드 추가
+    protected bool IsAttacking { get; set; }
+    private float _timeSinceLastAttack = float.MaxValue;
 
+    protected virtual void Update()
+    {
+        HandleAttackDelay();
+    }
+    private void HandleAttackDelay()
+    {
+        if (_timeSinceLastAttack <= 0.2f)    // TODO
+        {
+            _timeSinceLastAttack += Time.deltaTime;
+        }
+
+        if (IsAttacking && _timeSinceLastAttack > 0.2f)
+        {
+            _timeSinceLastAttack = 0;
+            CallAttack();
+        }
+    }
     public void CallKeyDown()   //key down call event
     {
         KeyDownEvent?.Invoke();

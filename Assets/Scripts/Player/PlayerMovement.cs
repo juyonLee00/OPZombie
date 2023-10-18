@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_playerStatsHandler.currentStats.isRunning)
         {
-            direction = direction * _playerStatsHandler.currentStats.moveSpeed * 1.5f;  //달릴 때 속도
+            direction = direction * _playerStatsHandler.currentStats.moveSpeed * 1.5f;  //달릴 때 속도 임의로 1.5배
         }
         else
         {
