@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784dc1ab265d941a3add0cdc7a4fc11a, type: 3}
+  m_Name: Candy
+  m_EditorClassIdentifier: 
+  displayName: "\uC0AC\uD0D5"
+  description: "\uD53C\uB85C\uB3C4\uC640 \uD5C8\uAE30\uB97C \uC18C\uB7C9 \uD574\uC18C\uD55C\uB2E4."
+  type: 1
+  icon: {fileID: 21300000, guid: c8ede7178d2b91c42b2335ad3193ba65, type: 3}
+  dropPrefab: {fileID: 0}
+  canStack: 1
+  maxStackAmount: 30
+  consumables: []
