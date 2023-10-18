@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 784dc1ab265d941a3add0cdc7a4fc11a, type: 3}
-  m_Name: AntipoisonPotion
+  m_Name: Steak
   m_EditorClassIdentifier: 
-  displayName: "\uD574\uB3C5\uC81C"
-  description: "\uC880\uBE44 \uC0C1\uD0DC\uB97C \uD574\uB3C5\uD560 \uC218 \uC788\uB2E4."
+  displayName: "\uAD6C\uC6B4 \uACE0\uAE30"
+  description: "\uCCB4\uB825\uC744 \uD68C\uBCF5\uD558\uACE0 \uADFC\uB825\uC774 \uC99D\uAC00\uB41C\uB2E4."
   type: 1
-  icon: {fileID: 21300000, guid: 8a38e0c362c83a047983d02b417b0980, type: 3}
+  icon: {fileID: 21300000, guid: 9286f577847cb5a44abca88417f111b3, type: 3}
   dropPrefab: {fileID: 0}
-  canStack: 1
-  maxStackAmount: 10
+  canStack: 0
+  maxStackAmount: 0
   consumables: []
