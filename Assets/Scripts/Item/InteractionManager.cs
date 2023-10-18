@@ -13,7 +13,7 @@ public interface IInteractable
 
 public class InteractionManager : MonoBehaviour
 {
-    public float maxCheckDistance;
+    [SerializeField] public float maxCheckDistance;
     public LayerMask layerMask;
 
     private GameObject curInteractGameobject;
@@ -32,8 +32,8 @@ public class InteractionManager : MonoBehaviour
     void Update()
     {
         RaycastHit2D hit;
-        Debug.DrawRay(transform.position, transform.right, Color.black);
-
+        Debug.DrawRay(transform.position, transform.forward, Color.magenta);
+        
         if (hit = Physics2D.Raycast(this.transform.position, this.transform.forward, maxCheckDistance, layerMask))
         {
             if (hit.collider.gameObject != curInteractGameobject)
@@ -48,38 +48,14 @@ public class InteractionManager : MonoBehaviour
         {
             curInteractGameobject = null;
             curInteractable = null;
-            //promptText.gameObject.SetActive(false);
+            promptText.gameObject.SetActive(false);
         }
-        /*
-        if (Time.time - lastCheckTime > checkRate)
-        {
-            lastCheckTime = Time.time;
-
-            RaycastHit2D hit;
-            Debug.DrawRay(this.transform.position, this.transform.forward, Color.black);
-
-            if (hit = Physics2D.Raycast(this.transform.position, this.transform.forward, maxCheckDistance, layerMask))
-            {
-                if (hit.collider.gameObject != curInteractGameobject)
-                {
-                    curInteractGameobject = hit.collider.gameObject;
-                    curInteractable = hit.collider.GetComponent<IInteractable>();
-                    Debug.Log(hit.collider.gameObject.name);
-                    //SetPromptText();
-                }
-            }
-            else
-            {
-                
-            }
-        }*/
     }
 
     private void SetPromptText()
     {
-        Debug.Log("Get");
-        /*promptText.gameObject.SetActive(true);
-        promptText.text = string.Format("<b>[E]</b> {0}", curInteractable.GetInteractPrompt());*/
+        promptText.gameObject.SetActive(true);
+        promptText.text = string.Format("<b>[E]</b> {0}", curInteractable.GetInteractPrompt());
     }
 
     public void OnInteractInput(InputAction.CallbackContext callbackContext)

@@ -8,13 +8,13 @@ public class ItemObject : MonoBehaviour, IInteractable
 
     public string GetInteractPrompt()
     {
-        Debug.Log("Pickup {0}");
         return string.Format("Pickup {0}", item.displayName);
     }
 
     public void OnInteract()
     {
-        //Inventory.instance.AddItem(item);
-        //Destroy(gameObject);
+        /*인벤토리에 추가하고 오브젝트 삭제 - 합쳤을 때 주석 제거
+        Inventory.instance.AddItem(item);
+        Destroy(gameObject);*/
     }
 }
