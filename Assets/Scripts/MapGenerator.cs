@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour
 {
     public GameObject[] roomPrefabs; // 방 프리팹 배열
+    public int stairRoomIndex;
 
     private int[,] mapGrid; // 맵 그리드
     public int mapWidth; // 맵 가로 크기
@@ -32,6 +33,10 @@ public class MapGenerator : MonoBehaviour
 
     void GenerateMap()
     {
+        int stairX = Random.Range(1, mapWidth - 1);
+        int stairY = Random.Range(1, mapHeight - 1);
+        mapGrid[stairX, stairY] = stairRoomIndex;
+
         for (int x = 0; x < mapWidth; x++)
         {
             for (int y = 0; y < mapHeight; y++)
@@ -41,10 +46,15 @@ public class MapGenerator : MonoBehaviour
                     // 경계는 벽으로 처리
                     mapGrid[x, y] = -1;
                 }
-                else
+                else if (x != stairX || y != stairY) // 이미 계단이 배치된 곳은 제외합니다.
                 {
-                    // 내부는 랜덤하게 방 배치
-                    int roomIndex = Random.Range(0, roomPrefabs.Length);
+                    int roomIndex;
+
+                    do
+                    {
+                        roomIndex = Random.Range(0, roomPrefabs.Length);
+                    } while (roomIndex == stairRoomIndex);
+
                     mapGrid[x, y] = roomIndex;
                 }
             }
@@ -74,7 +84,7 @@ public class MapGenerator : MonoBehaviour
         floor.SetActive(false);
     }
 
-    void ActivateFloor(int index)
+    public void ActivateFloor(int index)
     {
         for (int i = 0; i < floors.Count; i++)
         {
@@ -99,7 +109,7 @@ public class MapGenerator : MonoBehaviour
 
         foreach (Renderer childRenderer in childRenderers)
         {
-            if (childRenderer != renderer)  // 부모 오브젝트를 제외하기 위한 체크
+            if (childRenderer != renderer && childRenderer.name != "Floor")  // 부모 오브젝트를 제외하기 위한 체크
             {
                 // 기존 sortingOrder와 Y 위치 및 깊이(depth)를 고려하여 새로운 sortingOrder 설정. 여기서 '10'은 임의로 선택한 값으로, 실제 프로젝트에서는 필요에 따라 조정해야 합니다.
                 childRenderer.sortingOrder += -Mathf.RoundToInt(childRenderer.transform.position.y * 100 + childRenderer.transform.position.z * 10);
