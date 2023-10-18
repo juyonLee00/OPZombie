@@ -37,8 +37,10 @@ public class Inventory : MonoBehaviour
 
     private int curEquipIndex;
 
+    [SerializeField]
+    private PlayerStats playerStats;
     private PlayerController controller;
-    private PlayerConditions condition;
+    private PlayerStatsHandler playerStatsHandler;
 
     [Header("Events")]
     public UnityEvent onOpenInventory;
@@ -49,7 +51,7 @@ public class Inventory : MonoBehaviour
     {
         instance = this;
         controller = GetComponent<PlayerController>();
-        condition = GetComponent<PlayerConditions>();
+        playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
     private void Start()
     {
@@ -210,9 +212,13 @@ public class Inventory : MonoBehaviour
                 switch (selectedItem.item.consumables[i].type)
                 {
                     case ConsumableType.Health:
-                        condition.Heal(selectedItem.item.consumables[i].value); break;
+                        playerStats.health = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
                     case ConsumableType.Thirsty:
-                        condition.Drink(selectedItem.item.consumables[i].value); break;
+                        playerStats.thirsty = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
                 }
             }
         }

@@ -19,6 +19,18 @@ public class PlayerStatsHandler : MonoBehaviour
         UpdateStatsModifire();
     }
 
+    public void AddStatModifier(PlayerStats statModifier)
+    {
+        playerStatsModifire.Add(statModifier);
+        UpdateStatsModifire();
+    }
+
+    public void RemoveStatModifier(PlayerStats statModifier)
+    {
+        playerStatsModifire.Remove(statModifier);
+        UpdateStatsModifire();
+    }
+
     public void UpdateStatsModifire()
     {
         currentStats = new PlayerStats();
