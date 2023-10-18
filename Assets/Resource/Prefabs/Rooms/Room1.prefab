@@ -1062,6 +1062,7 @@ GameObject:
   - component: {fileID: 6254308316435515535}
   - component: {fileID: 7696194047003443640}
   - component: {fileID: 111843266387827130}
+  - component: {fileID: 1150880150692607082}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1839,6 +1840,20 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &1150880150692607082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4557227818747944985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e49c376ad04c17e46a5c9f56f137711f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkableMap: {fileID: 7696194047003443640}
+  ShowTestGrid: 0
 --- !u!1 &5855275456493921856
 GameObject:
   m_ObjectHideFlags: 0
