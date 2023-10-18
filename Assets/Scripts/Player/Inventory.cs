@@ -39,7 +39,7 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private PlayerStats playerStats;
-    private PlayerController controller;
+    private PlayerInputHandler playerInputHandler;
     private PlayerStatsHandler playerStatsHandler;
 
     [Header("Events")]
@@ -50,7 +50,7 @@ public class Inventory : MonoBehaviour
     void Awake()
     {
         instance = this;
-        controller = GetComponent<PlayerController>();
+        playerInputHandler = GetComponent<PlayerInputHandler>();
         playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
     private void Start()
@@ -83,13 +83,13 @@ public class Inventory : MonoBehaviour
         {
             inventoryWindow.SetActive(false);
             onCloseInventory?.Invoke();
-            controller.ToggleCursor(false);
+            playerInputHandler.ToggleCursor(false);
         }
         else
         {
             inventoryWindow.SetActive(true);
             onOpenInventory?.Invoke();
-            controller.ToggleCursor(true);
+            playerInputHandler.ToggleCursor(true);
         }
     }
 
