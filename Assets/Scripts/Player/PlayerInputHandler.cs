@@ -41,8 +41,7 @@ public class PlayerHandler : PlayerController
 
     public void OnAttack(InputValue value)
     {
-        Debug.Log("Attack");
-        CallAttack();
+        IsAttacking = value.isPressed;
     }
 
     public void OnRunning(InputValue value)
@@ -72,7 +71,6 @@ public class PlayerHandler : PlayerController
         Vector2 newAim = value.Get<Vector2>();
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
         newAim = (worldPos - (Vector2)transform.position).normalized;
-
         if (newAim.magnitude >= .9f)
         {
             CallLook(newAim);

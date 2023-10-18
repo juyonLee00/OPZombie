@@ -19,6 +19,18 @@ public class PlayerStatsHandler : MonoBehaviour
         UpdateStatsModifire();
     }
 
+    public void AddStatModifier(PlayerStats statModifier)
+    {
+        playerStatsModifire.Add(statModifier);
+        UpdateStatsModifire();
+    }
+
+    public void RemoveStatModifier(PlayerStats statModifier)
+    {
+        playerStatsModifire.Remove(statModifier);
+        UpdateStatsModifire();
+    }
+
     public void UpdateStatsModifire()
     {
         currentStats = new PlayerStats();
@@ -42,7 +54,7 @@ public class PlayerStatsHandler : MonoBehaviour
         currentStats.runnigSpeedExperience = (int)(operation(currentStats.runnigSpeedExperience, modifire.runnigSpeedExperience));
     }
 
-    private void LimitAllStats()
+    public void LimitAllStats()
     {
         LimitStats(ref currentStats.health, 100.0f);
         LimitStats(ref currentStats.strength, 10.0f);
