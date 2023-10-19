@@ -83,13 +83,13 @@ public class Inventory : MonoBehaviour
         {
             inventoryWindow.SetActive(false);
             onCloseInventory?.Invoke();
-            playerInputHandler.ToggleCursor(false);
+            //playerInputHandler.ToggleCursor(false);     //ToggleCursor Á¦°Å
         }
         else
         {
             inventoryWindow.SetActive(true);
             onOpenInventory?.Invoke();
-            playerInputHandler.ToggleCursor(true);
+            //playerInputHandler.ToggleCursor(true);
         }
     }
 

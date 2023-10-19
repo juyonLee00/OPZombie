@@ -16,12 +16,12 @@ public class IntroManager : MonoBehaviour
         _player.SetActive(false);
     }
 
-    public void GameStart()
-    {
-        _menuCam.SetActive(false);
-        _mainCam.SetActive(true);
-        _player.SetActive(true);
-        _introCanvas.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    //public void GameStart()
+    //{
+    //    _menuCam.SetActive(false);
+    //    _mainCam.SetActive(true);
+    //    _player.SetActive(true);
+    //    _introCanvas.SetActive(false);
+    //    Cursor.lockState = CursorLockMode.Locked;
+    //}
 }
