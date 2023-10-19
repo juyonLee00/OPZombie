@@ -21,7 +21,7 @@ public class ItemDurability : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //좀비와 충돌했을 때도 추가 예정
-        if(collision.gameObject.name == "OriginIron")
+        if(collision.gameObject.name == "OriginIron" || collision.gameObject.tag == "Zombie")
         {
             durability -= 10;
 
