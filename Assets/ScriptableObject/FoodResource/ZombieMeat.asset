@@ -16,8 +16,15 @@ MonoBehaviour:
   description: "\uD5C8\uAE30\uB294 \uD574\uACB0\uD558\uC9C0\uB9CC \uCCB4\uB825\uC774
     \uAC10\uC18C\uD558\uACE0 \uD53C\uB85C\uB3C4\uAC00 \uC99D\uAC00\uD569\uB2C8\uB2E4. "
   type: 1
+  typeDetail: 4
   icon: {fileID: 21300000, guid: 8d4a4962287a35747a98fe290e192b9d, type: 3}
   dropPrefab: {fileID: 0}
   canStack: 1
   maxStackAmount: 30
-  consumables: []
+  consumables:
+  - type: 0
+    value: 10
+  - type: 1
+    value: 20
+  - type: 2
+    value: 10
