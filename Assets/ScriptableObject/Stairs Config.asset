@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3415bdc3ec08ab42b251bd553d59320, type: 3}
   m_Name: Stairs Config
   m_EditorClassIdentifier: 
-  monsterSpawnRate: 0
+  monsterSpawnRate: 100
+  zombies:
+  - {fileID: 0}
   itemPrefabs: []
