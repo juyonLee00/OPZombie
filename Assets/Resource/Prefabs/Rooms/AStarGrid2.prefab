@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5917692250331990947}
   m_Layer: 0
-  m_Name: AStarGrid2 Variant
+  m_Name: AStarGrid2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
