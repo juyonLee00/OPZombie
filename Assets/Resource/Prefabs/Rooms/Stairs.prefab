@@ -2007,36 +2007,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2974295022371997048, guid: cf44e0d3803971b4faa494a5db6a7038, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5252969898836929276}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf44e0d3803971b4faa494a5db6a7038, type: 3}
 --- !u!4 &2884026798478113399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5595830572406362685, guid: cf44e0d3803971b4faa494a5db6a7038, type: 3}
   m_PrefabInstance: {fileID: 7326931453146818634}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5541869309086788914 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2974295022371997048, guid: cf44e0d3803971b4faa494a5db6a7038, type: 3}
-  m_PrefabInstance: {fileID: 7326931453146818634}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5252969898836929276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5541869309086788914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 413bfd3efbf1088448bfa8df13829de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 4156564796046730395, guid: 22975d42fe149a845a0d88ac4d5e40fb, type: 3}
-  spawnPoint: {fileID: 2884026798478113399}
-  spawnInterval: 20
 --- !u!1001 &8618592272055142020
 PrefabInstance:
   m_ObjectHideFlags: 0
