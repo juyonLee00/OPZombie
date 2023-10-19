@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class IntroManager : MonoBehaviour
 {
+    [SerializeField] private GameObject _menuCam;
+    [SerializeField] private GameObject _mainCam;
+    [SerializeField] private GameObject _player;
+    [SerializeField] private GameObject _introCanvas;
+
     public void Awake()
     {
         Cursor.lockState = CursorLockMode.None;

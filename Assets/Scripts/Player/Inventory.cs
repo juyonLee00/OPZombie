@@ -37,8 +37,10 @@ public class Inventory : MonoBehaviour
 
     private int curEquipIndex;
 
-    private PlayerController controller;
-    private PlayerConditions condition;
+    [SerializeField]
+    private PlayerStats playerStats;
+    private PlayerInputHandler playerInputHandler;
+    private PlayerStatsHandler playerStatsHandler;
 
     [Header("Events")]
     public UnityEvent onOpenInventory;
@@ -48,8 +50,8 @@ public class Inventory : MonoBehaviour
     void Awake()
     {
         instance = this;
-        controller = GetComponent<PlayerController>();
-        condition = GetComponent<PlayerConditions>();
+        playerInputHandler = GetComponent<PlayerInputHandler>();
+        playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
     private void Start()
     {
@@ -81,13 +83,13 @@ public class Inventory : MonoBehaviour
         {
             inventoryWindow.SetActive(false);
             onCloseInventory?.Invoke();
-            controller.ToggleCursor(false);
+            playerInputHandler.ToggleCursor(false);
         }
         else
         {
             inventoryWindow.SetActive(true);
             onOpenInventory?.Invoke();
-            controller.ToggleCursor(true);
+            playerInputHandler.ToggleCursor(true);
         }
     }
 
@@ -209,10 +211,14 @@ public class Inventory : MonoBehaviour
             {
                 switch (selectedItem.item.consumables[i].type)
                 {
-                    case ConsumableType.Health:
-                        condition.Heal(selectedItem.item.consumables[i].value); break;
+                    case ConsumableType.Hp:
+                        playerStats.health = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
                     case ConsumableType.Thirsty:
-                        condition.Drink(selectedItem.item.consumables[i].value); break;
+                        playerStats.thirsty = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
                 }
             }
         }
@@ -228,7 +234,7 @@ public class Inventory : MonoBehaviour
 
         uiSlots[selectedItemIndex].equipped = true;
         curEquipIndex = selectedItemIndex;
-        EquipManager.instance.EquipNew(selectedItem.item);
+        //EquipManager.instance.EquipNew(selectedItem.item);
         UpdateUI();
 
         SelectItem(selectedItemIndex);
@@ -237,7 +243,7 @@ public class Inventory : MonoBehaviour
     void UnEquip(int index) // 30°­
     {
         uiSlots[index].equipped = false;
-        EquipManager.instance.UnEquip();
+        //EquipManager.instance.UnEquip();
         UpdateUI();
 
         if (selectedItemIndex == index)

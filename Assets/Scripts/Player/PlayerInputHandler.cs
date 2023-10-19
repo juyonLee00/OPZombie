@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerHandler : PlayerController
+public class PlayerInputHandler : PlayerController
 {
     PlayerStatsHandler _playerStatsHandler;
     private Camera _camera;
+    private Vector3 _cameraPosition;
 
     private void Start()
     {
         _camera = Camera.main;
+        Cursor.lockState = CursorLockMode.Locked;
         _playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
 
@@ -31,6 +33,10 @@ public class PlayerHandler : PlayerController
             Debug.Log("LeftUP");
             CallKeyUp();
         }
+
+        _cameraPosition = new Vector3(this.transform.position.x, this.transform.position.y, _camera.transform.position.z);
+
+        _camera.transform.position = Vector3.Lerp(_cameraPosition, this.transform.position, 1.0f * Time.deltaTime);
     }
 
     public void OnMove(InputValue value)
@@ -75,5 +81,10 @@ public class PlayerHandler : PlayerController
         {
             CallLook(newAim);
         }
+    }
+
+    public void ToggleCursor(bool toggle)
+    {
+        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,7 +10,7 @@ public class ItemSlotUI : MonoBehaviour
     public Button button;
     public Image icon;
     public TextMeshProUGUI quantityText;
-    private ItemSlotUI curSlot;
+    private ItemSlot curSlot;
     private Outline outline;
 
     public int index;
@@ -25,13 +26,13 @@ public class ItemSlotUI : MonoBehaviour
         outline.enabled = equipped;
     }
 
-    public void Set(ItemSlotUI slot)
+    public void Set(ItemSlot slot)
     {
         curSlot = slot;
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
         quantityText.text = slot.quantity > 1 ? slot.quantity.ToString() : string.Empty;
-        
+
         if (outline != null)
         {
             outline.enabled = equipped;
@@ -49,4 +50,6 @@ public class ItemSlotUI : MonoBehaviour
     {
         Inventory.instance.SelectItem(index);
     }
+
+   
 }
