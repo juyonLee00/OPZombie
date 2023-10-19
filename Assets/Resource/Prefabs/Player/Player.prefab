@@ -343,6 +343,15 @@ MonoBehaviour:
   - Die SE
   - Die E
   - Die NE
+  normalizedVec:
+  - {x: 0, y: 1}
+  - {x: -1, y: 1}
+  - {x: -1, y: 0}
+  - {x: -1, y: -1}
+  - {x: 0, y: -1}
+  - {x: 1, y: -1}
+  - {x: 1, y: 0}
+  - {x: 1, y: 1}
 --- !u!114 &-2007162162894585431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +378,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95198fc3bb9979f44aec8d630afca319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiSlots: []
+  uiSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   inventoryWindow: {fileID: 7733663516679909716, guid: b63b8ede15a3720409ba0ca1a5cb496f, type: 3}
   dropPosition: {fileID: 6964355141745693083}
   selectedItemName: {fileID: 6416094783503750193, guid: 57b2603c2fc38c143b83321c1b12ef08, type: 3}

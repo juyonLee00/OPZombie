@@ -124,7 +124,7 @@ public class Inventory : MonoBehaviour
         ThrowItem(item);
     }
 
-    void ThrowItem(ItemData item)
+    public void ThrowItem(ItemData item)
     {
         Instantiate(item.dropPrefab, dropPosition.position, Quaternion.Euler(Vector3.one * Random.value * 360f));
     }

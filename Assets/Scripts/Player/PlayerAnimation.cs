@@ -11,6 +11,8 @@ public class PlayerAnimation : MonoBehaviour
     public string[] runDirections = { "Run N", "Run NW", "Run W", "Run SW", "Run S", "Run SE", "Run E", "Run NE" };
     public string[] attackDirections = { "Attack N", "Attack NW", "Attack W", "Attack SW", "Attack S", "Attack SE", "Attack E", "Attack NE" };
     public string[] dieDirections = { "Die N", "Die NW", "Die W", "Die SW", "Die S", "Die SE", "Die E", "Die NE" };
+    public Vector2[] normalizedVec = { new Vector2(0f, 1f), new Vector2(-1f, 1f), new Vector2(-1f, 0f), new Vector2(-1f, -1f), 
+                                    new Vector2(0f, -1f), new Vector2(1f, -1f), new Vector2(1f, 0f), new Vector2(1f, 1f)};
     string[] directionArray;
 
     private PlayerController _playerController;
@@ -105,7 +107,8 @@ public class PlayerAnimation : MonoBehaviour
         float stepCount = angle / step;
         int count = Mathf.FloorToInt(stepCount);
         
-        _weaponPoint.transform.position = new Vector2(transform.position.x, transform.position.y) + norDir * 0.2f;
+        _weaponPoint.transform.position = (new Vector2(transform.position.x, transform.position.y) 
+                                         - normalizedVec[count].normalized * 0.2f) + normalizedVec[(count + 7) / normalizedVec.Length]*0.1f;
         return count;
     }
 }
