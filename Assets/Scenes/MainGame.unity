@@ -375,6 +375,7 @@ MonoBehaviour:
   - {fileID: 5855275456493921856, guid: bf3f981fa855ffc409197d4aa3eae57e, type: 3}
   - {fileID: 5855275456493921856, guid: 110269402486ee44e8814eed777d080d, type: 3}
   - {fileID: 5855275456493921856, guid: 59ddb9062a44eef4f8aed46b56529b40, type: 3}
+  stairRoomIndex: 0
   mapWidth: 5
   mapHeight: 5
   totalFloor: 10
