@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6598478758445483244}
   - component: {fileID: -3369400528353703298}
   - component: {fileID: 8218888172065994643}
+  - component: {fileID: 5913504567679531699}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -283,6 +284,63 @@ MonoBehaviour:
     isSleep: 0
     strengthExperience: 0
     runnigSpeedExperience: 0
+--- !u!114 &5913504567679531699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249936781863715530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44845b2dc2f08842988843b60619ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleDirections:
+  - Idle N
+  - Idle NW
+  - Idle W
+  - Idle SW
+  - Idle S
+  - Idle SE
+  - Idle E
+  - Idle NE
+  walkDirections:
+  - Walk N
+  - Walk NW
+  - Walk W
+  - Walk SW
+  - Walk S
+  - Walk SE
+  - Walk E
+  - Walk NE
+  runDirections:
+  - Run N
+  - Run NW
+  - Run W
+  - Run SW
+  - Run S
+  - Run SE
+  - Run E
+  - Run NE
+  attckDirections:
+  - Attack N
+  - Attack NW
+  - Attack W
+  - Attack SW
+  - Attack S
+  - Attack SE
+  - Attack E
+  - Attack NE
+  dieDirections:
+  - Die N
+  - Die NW
+  - Die W
+  - Die SW
+  - Die S
+  - Die SE
+  - Die E
+  - Die NE
 --- !u!1 &6924029663945348031
 GameObject:
   m_ObjectHideFlags: 0

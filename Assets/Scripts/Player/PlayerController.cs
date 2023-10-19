@@ -91,9 +91,9 @@ public class PlayerController : MonoBehaviour
     {
         OnSleepEvent?.Invoke();
     }
-    public void ToggleCursor(bool toggle)
-    {
-        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
-        //canLook = !toggle;
-    }
+    //public void ToggleCursor(bool toggle)
+    //{
+    //    //Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+    //    //canLook = !toggle;
+    //}
 }

@@ -5,9 +5,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : PlayerController
 {
-    PlayerStatsHandler _playerStatsHandler;
-    PlayerAnimation _playerAnim;
+    private PlayerStatsHandler _playerStatsHandler;
     private Camera _camera;
+    private PlayerAnimation _playerAnim;
     private Vector3 _cameraPosition;
     private bool _isLookMode = false;
 
@@ -15,27 +15,27 @@ public class PlayerInputHandler : PlayerController
     {
         _camera = Camera.main;
         _playerAnim = GetComponent<PlayerAnimation>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
         _playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("LeftDown");
-            CallKeyDown();
-        }
-        if (Input.GetMouseButton(0))
-        {
-            CallKeyPress();
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("LeftDown");
+        //    CallKeyDown();
+        //}
+        //if (Input.GetMouseButton(0))
+        //{
+        //    CallKeyPress();
+        //}
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            Debug.Log("LeftUP");
-            CallKeyUp();
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    Debug.Log("LeftUP");
+        //    CallKeyUp();
+        //}
 
         if (Input.GetMouseButton(1))
         {
@@ -50,13 +50,17 @@ public class PlayerInputHandler : PlayerController
     public void OnMove(InputValue value)
     {
         Vector2 moveDirect = value.Get<Vector2>().normalized;
-        Debug.Log(moveDirect);
+        if (_playerStatsHandler.currentStats.isRunning)
+            _playerAnim.SetRunDirection(moveDirect);
+        else
+            _playerAnim.SetWalkDirection(moveDirect);
         CallMove(moveDirect);
     }
 
     public void OnAttack(InputValue value)
     {
         IsAttacking = value.isPressed;
+        _playerAnim.SetAttackDirection();
     }
 
     public void OnRunning(InputValue value)
@@ -83,16 +87,12 @@ public class PlayerInputHandler : PlayerController
 
     public void OnLook(InputValue value)
     {
-        Vector2 newAim = value.Get<Vector2>();
-        Debug.Log(newAim);
         if (_isLookMode)
         {
-
-            Debug.Log(newAim);
-            newAim = newAim - new Vector2(transform.position.x, transform.position.y);
-            _playerAnim.SetDirection(newAim);
-            //Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
-            //newAim = (worldPos - (Vector2)transform.position).normalized;
+            Vector2 newAim = value.Get<Vector2>();
+            Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
+            newAim = (worldPos - (Vector2)transform.position).normalized;
+            _playerAnim.SetIdleDirection(newAim);
             CallLook(newAim);
         }
 

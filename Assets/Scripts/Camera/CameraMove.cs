@@ -17,11 +17,11 @@ public class CameraMove : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(_target.position.x, _target.position.y, _target.position.z), 
+        transform.position = Vector3.Lerp(transform.position, new Vector3(_target.position.x, _target.position.y, transform.position.z), 
                             _speed * Time.deltaTime);
         
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, _minX, _maxX), 
-                                        Mathf.Clamp(transform.position.y, _minY, _maxY),
-                                        transform.position.z);
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, _minX, _maxX), 
+        //                                Mathf.Clamp(transform.position.y, _minY, _maxY),
+        //                                transform.position.z);
     }
 }
