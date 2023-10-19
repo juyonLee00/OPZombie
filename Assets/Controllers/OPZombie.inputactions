@@ -20,7 +20,7 @@
                     "id": "6a05799e-875b-4f00-ac06-84a06eb98034",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": true
                 },
                 {
@@ -164,7 +164,7 @@
                 },
                 {
                     "name": "",
-                    "id": "4cad071d-f45b-4e00-b3ba-3f9d6198f6b6",
+                    "id": "ac4a648b-301d-42c1-aebb-c34a275211a8",
                     "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",

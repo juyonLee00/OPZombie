@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EquipTool : MonoBehaviour
+public class EquipTool : MonoBehaviour  //장비 마우스로 장착
 {
     // Start is called before the first frame update
     void Start()

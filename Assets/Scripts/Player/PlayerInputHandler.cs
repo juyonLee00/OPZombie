@@ -6,12 +6,15 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler : PlayerController
 {
     PlayerStatsHandler _playerStatsHandler;
+    PlayerAnimation _playerAnim;
     private Camera _camera;
     private Vector3 _cameraPosition;
+    private bool _isLookMode = false;
 
     private void Start()
     {
         _camera = Camera.main;
+        _playerAnim = GetComponent<PlayerAnimation>();
         Cursor.lockState = CursorLockMode.Locked;
         _playerStatsHandler = GetComponent<PlayerStatsHandler>();
     }
@@ -34,14 +37,20 @@ public class PlayerInputHandler : PlayerController
             CallKeyUp();
         }
 
-        _cameraPosition = new Vector3(this.transform.position.x, this.transform.position.y, _camera.transform.position.z);
-
-        _camera.transform.position = Vector3.Lerp(_cameraPosition, this.transform.position, 1.0f * Time.deltaTime);
+        if (Input.GetMouseButton(1))
+        {
+            _isLookMode = true;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            _isLookMode = false;
+        }
     }
 
     public void OnMove(InputValue value)
     {
         Vector2 moveDirect = value.Get<Vector2>().normalized;
+        Debug.Log(moveDirect);
         CallMove(moveDirect);
     }
 
@@ -75,16 +84,24 @@ public class PlayerInputHandler : PlayerController
     public void OnLook(InputValue value)
     {
         Vector2 newAim = value.Get<Vector2>();
-        Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
-        newAim = (worldPos - (Vector2)transform.position).normalized;
-        if (newAim.magnitude >= .9f)
+        Debug.Log(newAim);
+        if (_isLookMode)
         {
+
+            Debug.Log(newAim);
+            newAim = newAim - new Vector2(transform.position.x, transform.position.y);
+            _playerAnim.SetDirection(newAim);
+            //Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
+            //newAim = (worldPos - (Vector2)transform.position).normalized;
             CallLook(newAim);
         }
+
     }
+
+
 
     public void ToggleCursor(bool toggle)
     {
-        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+        //Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
     }
 }

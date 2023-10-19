@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         OnLookEvent?.Invoke(direction);
     }
 
-    public void CallSleep()
+    public void CallSleep()     // 자는 경우에 시간 흐르면서 좀비가 공격하면 깬다
     {
         OnSleepEvent?.Invoke();
     }

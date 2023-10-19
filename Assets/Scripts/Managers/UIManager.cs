@@ -111,5 +111,5 @@ public class UIManager : MonoBehaviour
     {
         CloseAllPopupUI();
     }
-    
+    //마우스 오버 시 텍스트 출력
 }

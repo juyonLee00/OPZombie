@@ -9,7 +9,7 @@ public class ItemSlotUI : MonoBehaviour
     public Button button;
     public Image icon;
     public TextMeshProUGUI quantityText;
-    private ItemSlotUI curSlot;
+    private ItemSlot curSlot;
     private Outline outline;
 
     public int index;
@@ -25,7 +25,7 @@ public class ItemSlotUI : MonoBehaviour
         outline.enabled = equipped;
     }
 
-    public void Set(ItemSlotUI slot)
+    public void Set(ItemSlot slot)
     {
         curSlot = slot;
         icon.gameObject.SetActive(true);

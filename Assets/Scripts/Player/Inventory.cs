@@ -83,13 +83,13 @@ public class Inventory : MonoBehaviour
         {
             inventoryWindow.SetActive(false);
             onCloseInventory?.Invoke();
-            playerInputHandler.ToggleCursor(false);
+            //playerInputHandler.ToggleCursor(false);     //ToggleCursor Á¦°Å
         }
         else
         {
             inventoryWindow.SetActive(true);
             onOpenInventory?.Invoke();
-            playerInputHandler.ToggleCursor(true);
+            //playerInputHandler.ToggleCursor(true);
         }
     }
 
@@ -211,7 +211,7 @@ public class Inventory : MonoBehaviour
             {
                 switch (selectedItem.item.consumables[i].type)
                 {
-                    case ConsumableType.Health:
+                    case ConsumableType.Hp:
                         playerStats.health = selectedItem.item.consumables[i].value;
                         playerStatsHandler.AddStatModifier(playerStats);
                         break;
@@ -234,7 +234,7 @@ public class Inventory : MonoBehaviour
 
         uiSlots[selectedItemIndex].equipped = true;
         curEquipIndex = selectedItemIndex;
-        EquipManager.instance.EquipNew(selectedItem.item);
+        //EquipManager.instance.EquipNew(selectedItem.item);
         UpdateUI();
 
         SelectItem(selectedItemIndex);
@@ -243,7 +243,7 @@ public class Inventory : MonoBehaviour
     void UnEquip(int index) // 30°­
     {
         uiSlots[index].equipped = false;
-        EquipManager.instance.UnEquip();
+        //EquipManager.instance.UnEquip();
         UpdateUI();
 
         if (selectedItemIndex == index)
