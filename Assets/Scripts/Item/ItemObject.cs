@@ -17,4 +17,9 @@ public class ItemObject : MonoBehaviour, IInteractable
         Inventory.instance.AddItem(item);
         Destroy(gameObject);
     }
+
+    public ItemData GetItemData()
+    {
+        return item;
+    }
 }

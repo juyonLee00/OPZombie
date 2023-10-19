@@ -83,7 +83,7 @@ public class Inventory : MonoBehaviour
         {
             inventoryWindow.SetActive(false);
             onCloseInventory?.Invoke();
-            //playerInputHandler.ToggleCursor(false);     //ToggleCursor 제거
+            //playerInputHandler.ToggleCursor(false);     //ToggleCursor ????
         }
         else
         {
@@ -215,8 +215,24 @@ public class Inventory : MonoBehaviour
                         playerStats.health = selectedItem.item.consumables[i].value;
                         playerStatsHandler.AddStatModifier(playerStats);
                         break;
+                    case ConsumableType.Hunger:
+                        playerStats.hunger = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
                     case ConsumableType.Thirsty:
                         playerStats.thirsty = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
+                    case ConsumableType.Fatigue:
+                        playerStats.fatigability = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
+                    case ConsumableType.Strength:
+                        playerStats.strength = selectedItem.item.consumables[i].value;
+                        playerStatsHandler.AddStatModifier(playerStats);
+                        break;
+                    case ConsumableType.isZombie:
+                        playerStats.isZombie = bool.Parse(((int)(selectedItem.item.consumables[i].value)).ToString());
                         playerStatsHandler.AddStatModifier(playerStats);
                         break;
                 }
@@ -225,7 +241,7 @@ public class Inventory : MonoBehaviour
         RemoveSelectedItem();
     }
 
-    public void OnEquipButton() // 30강
+    public void OnEquipButton() // 30??
     {
         if (uiSlots[curEquipIndex].equipped)
         {
@@ -240,7 +256,7 @@ public class Inventory : MonoBehaviour
         SelectItem(selectedItemIndex);
     }
 
-    void UnEquip(int index) // 30강
+    void UnEquip(int index) // 30??
     {
         uiSlots[index].equipped = false;
         EquipManager.instance.UnEquip();
@@ -252,7 +268,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void OnUnEquipButton() // 30강
+    public void OnUnEquipButton() // 30??
     {
         UnEquip(selectedItemIndex);
     }
