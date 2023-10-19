@@ -1775,7 +1775,7 @@ GameObject:
   - component: {fileID: 4228007542695710875}
   - component: {fileID: 5989251622011122304}
   m_Layer: 0
-  m_Name: Kitchen
+  m_Name: kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ede87d86933f26478a48c7e3f76d45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: b566f807d17a029488851602081c51aa, type: 2}
+  config: {fileID: 11400000, guid: dddf84f01a9fa46448651e09744f2226, type: 2}
 --- !u!1001 &3972254403149238650
 PrefabInstance:
   m_ObjectHideFlags: 0
