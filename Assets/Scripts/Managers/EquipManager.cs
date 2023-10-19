@@ -32,7 +32,7 @@ public class EquipManager : MonoBehaviour
     public void EquipNew(ItemData item)
     {
         UnEquip();
-        curEquip = Instantiate(item.dropPrefab, equipParent).GetComponent<Equip>();
+        curEquip = Instantiate(item.equipPrefab, equipParent).GetComponent<Equip>();
     }
 
     public void UnEquip()

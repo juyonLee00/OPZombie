@@ -23,3 +23,4 @@ MonoBehaviour:
   consumables:
   - type: 5
     value: 15
+  equipPrefab: {fileID: 4255148040494035552, guid: 4242930830d4e754082d7b1226530971, type: 3}

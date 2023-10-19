@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: -3369400528353703298}
   - component: {fileID: 8218888172065994643}
   - component: {fileID: 5913504567679531699}
+  - component: {fileID: -2007162162894585431}
+  - component: {fileID: 7898673002720662284}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -40,7 +42,7 @@ Transform:
   m_Children:
   - {fileID: 5294456423683240224}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4635350369494476334
 SpriteRenderer:
@@ -323,7 +325,7 @@ MonoBehaviour:
   - Run SE
   - Run E
   - Run NE
-  attckDirections:
+  attackDirections:
   - Attack N
   - Attack NW
   - Attack W
@@ -341,6 +343,63 @@ MonoBehaviour:
   - Die SE
   - Die E
   - Die NE
+--- !u!114 &-2007162162894585431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249936781863715530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe3a34fa2d511448abf4245f54b458b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curEquip: {fileID: 0}
+  equipParent: {fileID: 5294456423683240224}
+--- !u!114 &7898673002720662284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249936781863715530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95198fc3bb9979f44aec8d630afca319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiSlots: []
+  inventoryWindow: {fileID: 7733663516679909716, guid: b63b8ede15a3720409ba0ca1a5cb496f, type: 3}
+  dropPosition: {fileID: 6964355141745693083}
+  selectedItemName: {fileID: 6416094783503750193, guid: 57b2603c2fc38c143b83321c1b12ef08, type: 3}
+  selectedItemDescription: {fileID: 7530699443558289090, guid: fe2de051f59f20d45a77e46c52ffd2d4, type: 3}
+  selectedItemStatNames: {fileID: 6722120978207407409, guid: 8171c85df6f8184489799a4b5f31eda2, type: 3}
+  selectedItemStatValues: {fileID: 3002809452862850244, guid: ff0d57ff38a905445bc2692a0252d143, type: 3}
+  useButton: {fileID: 1357716694301438673, guid: 38748515d02b6884b9a2ebcbfee849fb, type: 3}
+  equipButton: {fileID: 3104019419464769990, guid: 6bb6e9a07fd834a4aad8bee69b3ccec3, type: 3}
+  unEquipButton: {fileID: 8479045749261325517, guid: e3ded40f6cd131146a1845a71c54f51d, type: 3}
+  dropButton: {fileID: 2043004948542497270, guid: 4945e8d4adadba342b65a83d6a17ccbf, type: 3}
+  playerStats:
+    health: 100
+    hunger: 100
+    thirsty: 100
+    strength: 10
+    moveSpeed: 5
+    fatigability: 100
+    attackSpeed: 1
+    zombieInfect: 100
+    isZombie: 0
+    isRunning: 0
+    isSleep: 0
+    strengthExperience: 0
+    runnigSpeedExperience: 0
+  onOpenInventory:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseInventory:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6924029663945348031
 GameObject:
   m_ObjectHideFlags: 0

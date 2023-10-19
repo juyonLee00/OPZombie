@@ -66,4 +66,7 @@ public class ItemData : ScriptableObject
     [Header("ItemEffect")]
     public ItemDataEffect[] consumables;
 
+    [Header("Equip")]
+    public GameObject equipPrefab;
+
 }
