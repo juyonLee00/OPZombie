@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3415bdc3ec08ab42b251bd553d59320, type: 3}
+  m_Name: Kitchen Config
+  m_EditorClassIdentifier: 
+  monsterSpawnRate: 100
+  zombies:
+  - {fileID: 86972739678449339, guid: b528b00944f0f41a38a92458e05644d7, type: 3}
+  itemPrefabs:
+  - {fileID: 4218406402102768702, guid: 7b74755b94e8c44bb959359ebebf2fa5, type: 3}
+  - {fileID: 3743427534122933500, guid: aad6beef8716749f0981fb3648712fc2, type: 3}
+  - {fileID: 2019877477363843196, guid: d784df694c848472b9f837789b36692b, type: 3}
+  - {fileID: 524503761286840118, guid: a51461919cb08489f9aeaed8a7742887, type: 3}
+  - {fileID: 3838265266179141134, guid: c9327366b51254a3690c524bf428d6a1, type: 3}
+  - {fileID: 2590324516067666157, guid: 784148c41fc8045b2a1075023ade70a4, type: 3}
+  - {fileID: 3827776470025876768, guid: 49bfd87fd31254b9cacbc29723d33b6c, type: 3}
+  - {fileID: 7259024566445528446, guid: 7012949bc5f94422a8ec0028eee8aaf7, type: 3}
+  - {fileID: 2979958350714739876, guid: ccea8b9bfe8ef4b9a96a0deba82445ed, type: 3}
+  - {fileID: 492820926317067132, guid: 5e88df294972841fdb0c4bc608687a64, type: 3}
+  - {fileID: 3643759958718554180, guid: 7fc3990447a074122802acc891e0eabf, type: 3}
+  - {fileID: 6578318588581960062, guid: 318b2e3cdff4f4b45b648f41c2ff5895, type: 3}
+  - {fileID: 5988395341275833995, guid: b1acd532a6c4a4bf0a25b70f7725d46b, type: 3}
+  - {fileID: 1398154051671218560, guid: 05f8ad3ed9a9341519b27548961aa3b2, type: 3}
+  - {fileID: 1088141238988597501, guid: 05ba0699c60ff4f36b4a30224ed8c2c6, type: 3}
+  - {fileID: 3661719474969925227, guid: bc14b5266520f4ca89e3767f0038780d, type: 3}
+  - {fileID: 5904970811263549438, guid: 8573abbd280304a6c8e5d88bd21252f3, type: 3}
+  itemSpawnCount: 4

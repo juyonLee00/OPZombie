@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Pot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject inventoryPanel;
+    public bool activeInventory = false;
+
+    private void Start()
     {
-        
+        inventoryPanel.SetActive(activeInventory);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            activeInventory = !activeInventory;
+            inventoryPanel.SetActive(activeInventory);
+        }
+    }
+
+    void ShowUI()
+    {
+        //3개 UI 상자가 보여짐.
+        //
+
     }
 }

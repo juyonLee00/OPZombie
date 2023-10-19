@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3452065901420077491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37759898101206445}
+  - component: {fileID: 2775199311155702559}
+  m_Layer: 0
+  m_Name: CookingTable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &37759898101206445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452065901420077491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2775199311155702559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452065901420077491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0ec73c9ad204d599d8e28147082c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingItemRecipe:
+  - itemName: Steak
+    itemDisplayName: "\uC2A4\uD14C\uC774\uD06C"
+    itemImage: {fileID: 21300000, guid: 9286f577847cb5a44abca88417f111b3, type: 3}
+    needItemType: 00000000
+    needItemNumber: 00000000
+    get_ItemPrefab: {fileID: 1430306453781617280, guid: 777d430a8ca9a4a2ca7711da938c5c19, type: 3}
+  - itemName: AntipoisonPotion
+    itemDisplayName: "\uD574\uB3C5\uC81C"
+    itemImage: {fileID: 21300000, guid: 8a38e0c362c83a047983d02b417b0980, type: 3}
+    needItemType: 0400000006000000
+    needItemNumber: 0100000001000000
+    get_ItemPrefab: {fileID: 6439629949494873288, guid: 886b2b55a885f42d69fb23fd2a084d16, type: 3}
+  - itemName: Salad
+    itemDisplayName: "\uC0D0\uB7EC\uB4DC"
+    itemImage: {fileID: 21300000, guid: f18d633e3ae72024684049ba01725ff4, type: 3}
+    needItemType: 0200000003000000
+    needItemNumber: 0100000001000000
+    get_ItemPrefab: {fileID: 1383676293364315971, guid: 2e96a460a01f64dd3a5fd154731a2aa3, type: 3}
+  - itemName: Sandwitch
+    itemDisplayName: "\uC0CC\uB4DC\uC704\uCE58"
+    itemImage: {fileID: 21300000, guid: 21ab6376b76bf0f4d849b859eace04ea, type: 3}
+    needItemType: 050000000300000000000000
+    needItemNumber: 010000000100000001000000
+    get_ItemPrefab: {fileID: 2146531271341305263, guid: 70129bfc08a3a4edca9678d57d453490, type: 3}
+  - itemName: FishSteak
+    itemDisplayName: "\uAD6C\uC6B4 \uBB3C\uACE0\uAE30"
+    itemImage: {fileID: 21300000, guid: aed904ca5dc270b41ad74a3342f684ae, type: 3}
+    needItemType: 01000000
+    needItemNumber: 00000000
+    get_ItemPrefab: {fileID: 3016048945217322127, guid: 8f4c0780d70ad49a58ce107ad36f9353, type: 3}

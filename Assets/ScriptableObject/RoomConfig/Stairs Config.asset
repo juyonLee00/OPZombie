@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3415bdc3ec08ab42b251bd553d59320, type: 3}
-  m_Name: Kitchen Config
+  m_Name: Stairs Config
   m_EditorClassIdentifier: 
-  monsterSpawnRate: 0
+  monsterSpawnRate: 100
+  zombies:
+  - {fileID: 86972739678449339, guid: b528b00944f0f41a38a92458e05644d7, type: 3}
   itemPrefabs: []
+  itemSpawnCount: 0

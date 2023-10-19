@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6582825713208526538}
   - component: {fileID: 187995487030185720}
   - component: {fileID: 6714880332991561527}
+  - component: {fileID: 2090061446168649601}
   m_Layer: 7
   m_Name: Hammer
   m_TagString: Untagged
@@ -33,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 3405669224519981625}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &6582825713208526538
 BoxCollider2D:
@@ -120,6 +121,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 12136e1192834463286276ed3987ed5d, type: 2}
+--- !u!114 &2090061446168649601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828842111620251785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5480993170ee4ab3b11816bc4c14ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 828842111620251785}
+  durability: 100
 --- !u!1 &2443050185858802220
 GameObject:
   m_ObjectHideFlags: 0
