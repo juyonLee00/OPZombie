@@ -18,7 +18,7 @@ public enum ConsumableType
     Speed,
     Strength,
     Durability,
-    Condition//좀비 상태에서 회복 필요
+    isZombie
 }
 
 public enum ItemTypeDetail
