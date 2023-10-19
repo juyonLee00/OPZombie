@@ -17,7 +17,6 @@ public enum ConsumableType
     Thirsty,
     Speed,
     Strength,
-    Durability,
     isZombie
 }
 
