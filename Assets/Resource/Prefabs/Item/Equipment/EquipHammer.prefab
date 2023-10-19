@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4050229055293392163}
   - component: {fileID: 2263752141979734962}
   - component: {fileID: 1216998349965903935}
+  - component: {fileID: -3403857818540987500}
   m_Layer: 7
   m_Name: EquipHammer
   m_TagString: Untagged
@@ -181,3 +182,17 @@ MonoBehaviour:
   doesGatherResources: 1
   doesDealDamage: 0
   damage: 0
+--- !u!114 &-3403857818540987500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221272127512150695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5480993170ee4ab3b11816bc4c14ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 9221272127512150695}
+  durability: 100
