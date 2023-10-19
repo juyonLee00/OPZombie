@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterSpawnRate: 100
   zombies:
-  - {fileID: 0}
+  - {fileID: 4156564796046730395, guid: 22975d42fe149a845a0d88ac4d5e40fb, type: 3}
   itemPrefabs:
   - {fileID: 4218406402102768702, guid: 7b74755b94e8c44bb959359ebebf2fa5, type: 3}
   - {fileID: 3743427534122933500, guid: aad6beef8716749f0981fb3648712fc2, type: 3}
