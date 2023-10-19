@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de80ba80f65f403797f43962de0c340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToGive: {fileID: 11400000, guid: f41ad188041a94356aaf050b1e6d28f7, type: 2}
+  itemToGive: {fileID: 0}
   quantityPerHit: 3
   capacity: 0
 --- !u!1 &294881053288005874
