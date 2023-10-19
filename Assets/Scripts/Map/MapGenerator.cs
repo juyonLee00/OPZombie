@@ -7,6 +7,8 @@ public class MapGenerator : MonoBehaviour
     public GameObject[] roomPrefabs; // ¹æ ÇÁ¸®ÆÕ ¹è¿­
     public int stairRoomIndex;
 
+    public GameObject aStarGridPrefab; // AStarGrid ÇÁ¸®ÆÕ Ãß°¡
+
     private int[,] mapGrid; // ¸Ê ±×¸®µå
     public int mapWidth; // ¸Ê °¡·Î Å©±â
     public int mapHeight; // ¸Ê ¼¼·Î Å©±â
@@ -38,6 +40,12 @@ public class MapGenerator : MonoBehaviour
 
             GenerateMap();
             InstantiateRooms();
+
+            GameObject aStarGridInstance = Instantiate(aStarGridPrefab, Vector3.zero, Quaternion.identity);
+            aStarGridInstance.transform.parent = floors[i].transform;
+
+            Vector3 gridPosition = new Vector3(0.5f, -0.25f, 0f);
+            aStarGridInstance.transform.position = gridPosition;
         }
     }
 

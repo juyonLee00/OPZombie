@@ -16,8 +16,9 @@ public class ZombieScript : MonoBehaviour
         if (!isPaused)
             
         {
-            Debug.Log("맞았다.");
+            
             health -= damage;
+            Debug.Log("맞았다.");
             if (health <= 0)
             {
                 Die();
