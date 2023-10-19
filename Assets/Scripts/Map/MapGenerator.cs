@@ -80,13 +80,16 @@ public class MapGenerator : MonoBehaviour
         floor.transform.position = Vector3.zero;
         floors.Add(floor);
 
+        float roomSpacingX = 0.5f;
+        float roomSpacingY = 0.25f;
+
         for (int x = 0; x < mapWidth; x++)
         {
             for (int y = 0; y < mapHeight; y++)
             {
                 if (mapGrid[x, y] != -1)
                 {
-                    Vector3 positionIsoMetric = new Vector3((x - y) * 4f, (-x - y) * 2f, 0);
+                    Vector3 positionIsoMetric = new Vector3((x - y) * (4f + roomSpacingX), (-x - y) * (2f + roomSpacingY), 0);
                     GameObject roomInstance = Instantiate(roomPrefabs[mapGrid[x, y]], positionIsoMetric, Quaternion.identity);
                     roomInstance.transform.parent = floor.transform;
                     UpdateSortingOrder(roomInstance);
