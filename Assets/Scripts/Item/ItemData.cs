@@ -18,11 +18,31 @@ public enum ConsumableType
     Speed,
     Strength,
     Durability,
-    Condition//좀비 상태에서 회복 필요
+    isZombie
+}
+
+public enum ItemTypeDetail
+{
+    MeatProtein,
+    FishProtein,
+    Fruit,
+    Vegetable,
+    Poison,
+    Meal,
+    Drink,
+    FoodCanCook,
+    FoodCantCook,
+    Iron,
+    Wood,
+    Bone,
+    FoodTool,
+    Weapon,
+    CanGetItem,
+    Bed
 }
 
 [System.Serializable]
-public class ItemDataConsumable
+public class ItemDataEffect
 {
     public ConsumableType type;
     public float value;
@@ -35,6 +55,7 @@ public class ItemData : ScriptableObject
     public string displayName;
     public string description;
     public ItemType type;
+    public ItemTypeDetail typeDetail;
     public Sprite icon;
     public GameObject dropPrefab;
 
@@ -42,7 +63,7 @@ public class ItemData : ScriptableObject
     public bool canStack;
     public int maxStackAmount;
 
-    [Header("Consumable")]
-    public ItemDataConsumable[] consumables;
+    [Header("ItemEffect")]
+    public ItemDataEffect[] consumables;
 
 }
