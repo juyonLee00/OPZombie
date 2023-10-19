@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +11,13 @@ public class ZombieController : MonoBehaviour
     private AStarGrid aStarGrid;
     private List<AStarNode> currentPath;
     public float moveSpeed = 0.5f;
+    public float originalMoveSpeed = 0.5f;
+
     private bool isChasingPlayer = false;
     private GameObject[] spriteObjects; // 좀비 스프라이트 게임 오브젝트 배열
     private int currentSpriteIndex = 0; // 현재 스프라이트 인덱스
+
+
 
     private void Start()
     {
@@ -123,5 +128,17 @@ public class ZombieController : MonoBehaviour
         {
             isChasingPlayer = false;
         }
+    }
+
+    public IEnumerator SlowDownZombieForSeconds(float seconds)
+    {
+        // 이동 속도를 0으로 설정
+        moveSpeed = 0f;
+
+        // 지정된 시간(1초) 동안 대기
+        yield return new WaitForSeconds(seconds);
+
+        // 원래 이동 속도로 복구
+        moveSpeed = originalMoveSpeed;
     }
 }
