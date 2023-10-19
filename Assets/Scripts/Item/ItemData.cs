@@ -42,7 +42,7 @@ public enum ItemTypeDetail
 }
 
 [System.Serializable]
-public class ItemDataConsumable
+public class ItemDataEffect
 {
     public ConsumableType type;
     public float value;
@@ -63,7 +63,7 @@ public class ItemData : ScriptableObject
     public bool canStack;
     public int maxStackAmount;
 
-    [Header("Consumable")]
-    public ItemDataConsumable[] consumables;
+    [Header("ItemEffect")]
+    public ItemDataEffect[] consumables;
 
 }
