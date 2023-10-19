@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class ZombieController : MonoBehaviour
 {
-    public float detectionDistance = 5f;
+    public float detectionDistance = 25f;
 
     public LayerMask playerLayer; // 플레이어 레이어
     private Transform player; // 플레이어의 Transform
     private AStarGrid aStarGrid;
     private List<AStarNode> currentPath;
-    private int moveSpeed = 1;
+    private float moveSpeed = 0.5f;
     private bool isChasingPlayer = false;
 
     private void Start()
     {
         aStarGrid = FindObjectOfType<AStarGrid>();
-        player = GameObject.FindGameObjectWithTag("Player").transform; // 플레이어를 탐지
+        player = Player.Instance.transform;  // 플레이어를 탐지
         currentPath = new List<AStarNode>();
     }
 
@@ -64,9 +64,10 @@ public class ZombieController : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, nextPosition, moveSpeed * Time.deltaTime);
 
             // 현재 위치가 목표에 충분히 가까우면 다음 노드로 이동
-            if (Vector3.Distance(transform.position, nextPosition) < 0.1f)
+            if (Vector3.Distance(transform.position, nextPosition) < 0.2f)
             {
                 currentPath.RemoveAt(0);
+
             }
         }
         else

@@ -7,7 +7,7 @@ public class AStarGrid : MonoBehaviour
 {
     [SerializeField] private Tilemap walkableMap;
     [Header("씬에 그리드를 표시")][SerializeField] bool ShowTestGrid;
-
+    [Header("대각선 탐색")][SerializeField] bool Diagonal;
 
     private AStarNode[,] grid; // [y,x] 그리드
 
