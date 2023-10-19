@@ -12,7 +12,7 @@ public class Bed : MonoBehaviour
     GameObject sleepIcon;
 
     [SerializeField]
-    TextMeshProUGUI FatigueTxt;
+    public TextMeshProUGUI fatigueText;
 
     //private PlayerStatsHandler _playerStatsHandler;
 
@@ -37,6 +37,7 @@ public class Bed : MonoBehaviour
         while (true)
         {
             ShowSleepStat(false);
+            yield return new WaitForSeconds(0.5f);
             Debug.Log(test);
             test += 6;
             /*
@@ -44,7 +45,7 @@ public class Bed : MonoBehaviour
              _playerStatsHandler.currentStats.fatigability += 6.0;
              */
             ShowSleepStat(true);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
     }
 
@@ -52,6 +53,8 @@ public class Bed : MonoBehaviour
     {
         Debug.Log("코루틴 종료");
         StopCoroutine("OnSleep");
+        ChangePlayerStat(false);
+        ShowSleepStat(false);
     }
 
     void ChangePlayerStat(bool isPlayerSleep)
@@ -67,7 +70,7 @@ public class Bed : MonoBehaviour
     void ShowSleepStat(bool isShow)
     {
         sleepIcon.SetActive(isShow);
-        FatigueTxt.gameObject.SetActive(isShow);
+        fatigueText.gameObject.SetActive(isShow);
     }
 
     
