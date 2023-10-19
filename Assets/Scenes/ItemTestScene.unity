@@ -168,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &99392305
 Transform:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &688014592
 Transform:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1189457829
 Transform:
   m_ObjectHideFlags: 0
@@ -1563,10 +1563,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood
       objectReference: {fileID: 0}
-    - target: {fileID: 6739226723828276632, guid: 1193dba8533644a22b080fcc0e0186a8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1586,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 828842111620251785, guid: f5fdd8b71c77e4ebd985b02b36c72cd0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4543031349364449361, guid: f5fdd8b71c77e4ebd985b02b36c72cd0, type: 3}
       propertyPath: m_RootOrder
@@ -2027,10 +2023,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Iron
       objectReference: {fileID: 0}
-    - target: {fileID: 3179742855088898225, guid: d8b4fdd4432b545d0942d98f4558aed9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7437279223973005476, guid: d8b4fdd4432b545d0942d98f4558aed9, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2213,10 +2205,6 @@ PrefabInstance:
     - target: {fileID: 143472616697521117, guid: fb837e45f34e84436b051285248fa581, type: 3}
       propertyPath: m_Name
       value: OriginIron
-      objectReference: {fileID: 0}
-    - target: {fileID: 143472616697521117, guid: fb837e45f34e84436b051285248fa581, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4823415011321151539, guid: fb837e45f34e84436b051285248fa581, type: 3}
       propertyPath: m_RootOrder
@@ -2819,10 +2807,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone
       objectReference: {fileID: 0}
-    - target: {fileID: 5968047023936384546, guid: 510a47cbb6af64e0d9c72ede1247b4c9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3197,10 +3181,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chainsaw
       objectReference: {fileID: 0}
-    - target: {fileID: 5588598289818047988, guid: 7cabcf923728140fda72cb33660f930f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3343,10 +3323,6 @@ PrefabInstance:
     - target: {fileID: 2522061361432958639, guid: 97ae71e70f49b4dbabb0480f622a3333, type: 3}
       propertyPath: m_Name
       value: Crowbar
-      objectReference: {fileID: 0}
-    - target: {fileID: 2522061361432958639, guid: 97ae71e70f49b4dbabb0480f622a3333, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3562669037207571398, guid: 97ae71e70f49b4dbabb0480f622a3333, type: 3}
       propertyPath: m_RootOrder

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5558598439838471409}
   - component: {fileID: 2007464902354135729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character_Zombie3_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 4199257228271956386}
   - component: {fileID: 9092969605230632029}
   - component: {fileID: 1698628974546769941}
-  m_Layer: 0
+  - component: {fileID: 2203711783991174172}
+  m_Layer: 9
   m_Name: Zombie
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,9 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionDistance: 15
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  moveSpeed: 0.5
 --- !u!61 &9092969605230632029
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -235,6 +234,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2203711783991174172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156564796046730395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa08a33ef7d35942bcdb114c9900a1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  attackDamage: 1
+  pauseDuration: 1
 --- !u!1 &4500962596222190017
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418352333813070664}
   - component: {fileID: 4951400696741954349}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character_Zombie3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6645801004641231884}
   - component: {fileID: 1586358456144663003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character_Zombie3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8133671356105667215}
   - component: {fileID: 6249688591333961949}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character_Zombie3_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
