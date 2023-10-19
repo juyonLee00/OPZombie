@@ -26,6 +26,16 @@ public class MapGenerator : MonoBehaviour
         for (int i = 0; i < floorCount; i++)
         {
             mapGrid = new int[mapWidth, mapHeight];
+
+            // 모든 값을 -1로 초기화합니다.
+            for (int x = 0; x < mapWidth; x++)
+            {
+                for (int y = 0; y < mapHeight; y++)
+                {
+                    mapGrid[x, y] = -1;
+                }
+            }
+
             GenerateMap();
             InstantiateRooms();
         }
@@ -33,33 +43,36 @@ public class MapGenerator : MonoBehaviour
 
     void GenerateMap()
     {
-        int stairX = Random.Range(1, mapWidth - 1);
-        int stairY = Random.Range(1, mapHeight - 1);
+        // 모든 가능한 방의 인덱스를 리스트로 만듭니다.
+        List<int> availableRoomIndices = new List<int>();
+        for (int i = 0; i < roomPrefabs.Length; i++)
+        {
+            if (i != stairRoomIndex)
+            {
+                availableRoomIndices.Add(i);
+            }
+        }
+
+        int stairX = Random.Range(0, mapWidth);
+        int stairY = Random.Range(0, mapHeight);
         mapGrid[stairX, stairY] = stairRoomIndex;
 
         for (int x = 0; x < mapWidth; x++)
         {
             for (int y = 0; y < mapHeight; y++)
             {
-                if (x == 0 || y == 0 || x == mapWidth - 1 || y == mapHeight - 1)
+                if (!(x == stairX && y == stairY) && availableRoomIndices.Count > 0) // 이미 계단이 배치된 곳과 사용 가능한 방이 없는 경우는 제외합니다.
                 {
-                    // 경계는 벽으로 처리
-                    mapGrid[x, y] = -1;
-                }
-                else if (x != stairX || y != stairY) // 이미 계단이 배치된 곳은 제외합니다.
-                {
-                    int roomIndex;
+                    int randomIndexInList = Random.Range(0, availableRoomIndices.Count);
+                    int roomIndexInPrefabArray = availableRoomIndices[randomIndexInList];
+                    availableRoomIndices.RemoveAt(randomIndexInList); // 선택된 방 인덱스를 리스트에서 제거합니다.
 
-                    do
-                    {
-                        roomIndex = Random.Range(0, roomPrefabs.Length);
-                    } while (roomIndex == stairRoomIndex);
-
-                    mapGrid[x, y] = roomIndex;
+                    mapGrid[x, y] = roomIndexInPrefabArray;
                 }
             }
         }
     }
+
 
     void InstantiateRooms()
     {
@@ -73,7 +86,7 @@ public class MapGenerator : MonoBehaviour
             {
                 if (mapGrid[x, y] != -1)
                 {
-                    Vector3 positionIsoMetric = new Vector3((x - y) * 4f, (-x - y) * 2f, y - x);
+                    Vector3 positionIsoMetric = new Vector3((x - y) * 4f, (-x - y) * 2f, 0);
                     GameObject roomInstance = Instantiate(roomPrefabs[mapGrid[x, y]], positionIsoMetric, Quaternion.identity);
                     roomInstance.transform.parent = floor.transform;
                     UpdateSortingOrder(roomInstance);
