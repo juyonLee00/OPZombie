@@ -17,12 +17,12 @@ public enum ConsumableType
     Thirsty,
     Speed,
     Strength,
-    Durability,
     isZombie
 }
 
 public enum ItemTypeDetail
 {
+    None,
     MeatProtein,
     FishProtein,
     Fruit,

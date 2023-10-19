@@ -15,8 +15,9 @@ MonoBehaviour:
   displayName: "\uCCA0"
   description: "\uAC01\uC885 \uC544\uC774\uD15C\uC744 \uB9CC\uB4E4 \uC218 \uC788\uB2E4."
   type: 2
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  typeDetail: 0
+  icon: {fileID: 21300000, guid: 7e082cc2cf2a4433d85e388c6bf94234, type: 3}
+  dropPrefab: {fileID: 3179742855088898225, guid: d8b4fdd4432b545d0942d98f4558aed9, type: 3}
   canStack: 1
   maxStackAmount: 30
   consumables: []

@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 4491456256924692384}
   - component: {fileID: 2859913663581625730}
   - component: {fileID: 6733216389602988407}
+  - component: {fileID: 3309152052571661198}
   m_Layer: 7
   m_Name: Chainsaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2360113426304816618
 Transform:
   m_ObjectHideFlags: 0
@@ -120,6 +121,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 16efa268cc0f7439a99dc49dcb7d0374, type: 2}
+--- !u!114 &3309152052571661198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588598289818047988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5480993170ee4ab3b11816bc4c14ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5588598289818047988}
+  durability: 100
 --- !u!1 &6664978964947450303
 GameObject:
   m_ObjectHideFlags: 0
