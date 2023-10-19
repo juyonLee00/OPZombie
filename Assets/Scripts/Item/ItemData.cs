@@ -22,6 +22,7 @@ public enum ConsumableType
 
 public enum ItemTypeDetail
 {
+    None,
     MeatProtein,
     FishProtein,
     Fruit,

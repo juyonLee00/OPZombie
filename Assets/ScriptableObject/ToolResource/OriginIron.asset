@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784dc1ab265d941a3add0cdc7a4fc11a, type: 3}
   m_Name: OriginIron
   m_EditorClassIdentifier: 
-  displayName: "\uC790\uC6D0"
-  description: 
+  displayName: "\uCCA0\uAD11\uC11D"
+  description: "\uD574\uBA38\uB85C \uB0B4\uCE58\uB824\uC11C \uCCA0\uC744 \uC5BB\uC744
+    \uC218 \uC788\uB2E4."
   type: 2
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
+  typeDetail: 0
+  icon: {fileID: 21300000, guid: d0ea2ec653dd331458a02626c7a02955, type: 3}
+  dropPrefab: {fileID: 143472616697521117, guid: fb837e45f34e84436b051285248fa581, type: 3}
   canStack: 0
   maxStackAmount: 0
   consumables: []
