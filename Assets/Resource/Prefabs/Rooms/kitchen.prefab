@@ -917,11 +917,6 @@ GameObject:
   - component: {fileID: 6254308316435515535}
   - component: {fileID: 7696194047003443640}
   - component: {fileID: 111843266387827130}
-<<<<<<< Updated upstream
-=======
-  - component: {fileID: 7177146081781067066}
-  - component: {fileID: 8259949885388241380}
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1703,73 +1698,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
-<<<<<<< Updated upstream
-=======
---- !u!114 &7177146081781067066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4557227818747944985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49c376ad04c17e46a5c9f56f137711f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkableMap: {fileID: 7696194047003443640}
-  ShowTestGrid: 0
-  Diagonal: 0
---- !u!60 &8259949885388241380
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4557227818747944985}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.00086291134, y: 1.9883376}
-      - {x: -2.9542572, y: 0.5013664}
-      - {x: 0.06861293, y: -0.953437}
-      - {x: 2.967089, y: 0.5081912}
-  m_UseDelaunayMesh: 0
->>>>>>> Stashed changes
 --- !u!1 &5855275456493921856
 GameObject:
   m_ObjectHideFlags: 0

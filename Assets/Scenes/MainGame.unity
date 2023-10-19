@@ -372,23 +372,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
-  - {fileID: 5855275456493921856, guid: 59ddb9062a44eef4f8aed46b56529b40, type: 3}
   - {fileID: 5855275456493921856, guid: bf3f981fa855ffc409197d4aa3eae57e, type: 3}
   - {fileID: 5855275456493921856, guid: 110269402486ee44e8814eed777d080d, type: 3}
-<<<<<<< Updated upstream
   - {fileID: 5855275456493921856, guid: 59ddb9062a44eef4f8aed46b56529b40, type: 3}
   mapWidth: 5
   mapHeight: 5
   totalFloor: 10
-=======
-  - {fileID: 5855275456493921856, guid: 2c3620f2f75b5d14b9d57c4d60ebace4, type: 3}
-  - {fileID: 5855275456493921856, guid: 4c7c7d9f4c1a6ce45b8d3ec2bfe07592, type: 3}
-  - {fileID: 5855275456493921856, guid: 2abea12bce7595642b4ebb4071a7d8f1, type: 3}
-  stairRoomIndex: 0
-  mapWidth: 3
-  mapHeight: 2
-  totalFloor: 5
->>>>>>> Stashed changes
   floors: []
 --- !u!4 &1768862737
 Transform:
