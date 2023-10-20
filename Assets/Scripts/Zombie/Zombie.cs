@@ -31,6 +31,6 @@ public class ZombieScript : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
