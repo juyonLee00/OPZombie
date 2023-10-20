@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Stair : MonoBehaviour
 {
@@ -17,17 +18,25 @@ public class Stair : MonoBehaviour
         {
             int currentFloorIndex = mapGenerator.floors.IndexOf(transform.parent.gameObject);
 
-            if (isUpStair && currentFloorIndex < mapGenerator.floors.Count - 1)
+            if (isUpStair && currentFloorIndex != 0)
             {
-                // 올라가는 계단이며 현재 층이 맨 위층이 아닐 경우 다음 층으로 이동
-                mapGenerator.ActivateFloor(currentFloorIndex + 1);
-                transform.parent.gameObject.SetActive(false);
-            }
-            else if (!isUpStair && currentFloorIndex > 0)
-            {
-                // 내려가는 계단이며 현재 층이 맨 아래층이 아닐 경우 이전 층으로 이동
+                // 올라가는 계단이며 현재 층이 맨 위층(인덱스 0)이 아닐 경우 위로 한 층 이동
                 mapGenerator.ActivateFloor(currentFloorIndex - 1);
                 transform.parent.gameObject.SetActive(false);
+            }
+            else if (!isUpStair)
+            {
+                if (currentFloorIndex != mapGenerator.floors.Count - 1)
+                {
+                    // 내려가는 계단이며 현재 층이 맨 아래층(마지막 인덱스)이 아닐 경우 아래로 한 층 이동
+                    mapGenerator.ActivateFloor(currentFloorIndex + 1);
+                    transform.parent.gameObject.SetActive(false);
+                }
+                else
+                {
+                    // 맨 마지막 인덱스에서 내려가는 계단에 접촉하면 GameClear 씬 로드
+                    SceneManager.LoadScene("GameEnd");
+                }
             }
         }
     }
