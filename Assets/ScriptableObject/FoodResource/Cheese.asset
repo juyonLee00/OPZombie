@@ -18,7 +18,7 @@ MonoBehaviour:
   type: 1
   typeDetail: 0
   icon: {fileID: 21300000, guid: 508f1a59e9c755c4ba2f7074a7d3714e, type: 3}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 524503761286840118, guid: a51461919cb08489f9aeaed8a7742887, type: 3}
   canStack: 1
   maxStackAmount: 30
   consumables:
@@ -30,3 +30,4 @@ MonoBehaviour:
     value: 3
   - type: 0
     value: 0
+  equipPrefab: {fileID: 0}
