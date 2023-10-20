@@ -16,6 +16,7 @@ public class Stair : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("플레이어 접촉");
             int currentFloorIndex = mapGenerator.floors.IndexOf(transform.parent.gameObject);
 
             if (isUpStair && currentFloorIndex != 0)

@@ -1,23 +1,28 @@
 using UnityEngine;
 
+public enum Direction
+{
+    North,
+    East,
+    South,
+    West
+}
 public class Door : MonoBehaviour
 {
     private Collider2D doorCollider;
-    private Room room;
     private int health = 100; // 도어의 초기 체력
     private bool isZombieColliding = false;
     private float damageCooldown = 1.0f; // 피해를 입히는 주기
     private float lastDamageTime;
+    public Vector2 Position { get; set; } // 이 문의 위치 (방의 grid 좌표)
+    public Direction Direction { get; set; } // 이 문이 어느 방향을 보고 있는지
+
+    private MapGenerator mapGenerator;
 
     void Start()
     {
         doorCollider = GetComponent<Collider2D>();
-    }
-
-    // 해당 문이 속한 방을 설정합니다.
-    public void SetRoom(Room room)
-    {
-        this.room = room;
+        mapGenerator = FindObjectOfType<MapGenerator>();
     }
 
     void Update()
@@ -45,11 +50,16 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // 이 문이 연결된 방향에 다른 방이 있는지 확인합니다.
-            int direction = GetDirection(collision.transform.position);
-            if (room.Doors[direction] != null)
+            Debug.Log("player collison");
+
+            Vector2 nextRoomPosition = GetNextRoomPosition();
+
+            if (mapGenerator.IsInside(nextRoomPosition) &&
+               mapGenerator.mapGrid[(int)nextRoomPosition.x, (int)nextRoomPosition.y] != -1)
             {
-                Physics2D.IgnoreCollision(collision.collider, doorCollider);
+                // IgnoreCollision 대신 해당 문 오브젝트를 일시적으로 다른 레이어(예: "PassableDoor")로 이동
+                gameObject.layer = LayerMask.NameToLayer("PassableDoor");
+                Debug.Log("Player can pass through the door.");
             }
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie")) // 좀비 레이어를 비교
@@ -64,7 +74,8 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Physics2D.IgnoreCollision(collision.collider, doorCollider, false);
+            // Player가 문을 통과한 후에는 원래 레이어로 돌아옴
+            gameObject.layer = LayerMask.NameToLayer("Door");
         }
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie")) // 좀비 레이어를 비교
         {
@@ -73,20 +84,21 @@ public class Door : MonoBehaviour
         }
     }
 
-    // 충돌 위치로부터 이 문의 위치까지의 벡터를 사용하여 충돌 오브젝트가 어느 쪽에서 접근했는지 결정합니다.
-    int GetDirection(Vector3 collisionPosition)
+    Vector2 GetNextRoomPosition()
     {
-        Vector3 dirVector = collisionPosition - transform.position;
-        float angle = Mathf.Atan2(dirVector.y, dirVector.x) * Mathf.Rad2Deg;
-
-        if (angle > -45 && angle <= 45)
-            return 0; // 오른쪽
-        else if (angle > 45 && angle <= 135)
-            return 1; // 위쪽
-        else if ((angle > 135 && angle <= 180) || (angle >= -180 && angle < -135))
-            return 2; // 왼쪽
-        else
-            return 3; // 아래쪽
+        switch (Direction)
+        {
+            case Direction.North:
+                return Position + Vector2.up;
+            case Direction.East:
+                return Position + Vector2.right;
+            case Direction.South:
+                return Position + Vector2.down;
+            case Direction.West:
+                return Position + Vector2.left;
+            default:
+                return Position;
+        }
     }
 
     void DestroyDoor()
