@@ -2,12 +2,16 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private Collider doorCollider;
+    private Collider2D doorCollider;
     private Room room;
+    private int health = 100; // 도어의 초기 체력
+    private bool isZombieColliding = false;
+    private float damageCooldown = 1.0f; // 피해를 입히는 주기
+    private float lastDamageTime;
 
     void Start()
     {
-        doorCollider = GetComponent<Collider>();
+        doorCollider = GetComponent<Collider2D>();
     }
 
     // 해당 문이 속한 방을 설정합니다.
@@ -16,7 +20,28 @@ public class Door : MonoBehaviour
         this.room = room;
     }
 
-    void OnCollisionEnter(Collision collision)
+    void Update()
+    {
+        if (isZombieColliding)
+        {
+            // damageCooldown 이상 시간이 지났는지 확인
+            if (Time.time - lastDamageTime >= damageCooldown)
+            {
+                // 초당 5씩 체력을 감소
+                health -= 5;
+                lastDamageTime = Time.time;
+                Debug.Log("도어 체력: " + health);
+
+                if (health <= 0)
+                {
+                    // 체력이 0 이하로 떨어지면 도어를 파괴
+                    DestroyDoor();
+                }
+            }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -24,16 +49,27 @@ public class Door : MonoBehaviour
             int direction = GetDirection(collision.transform.position);
             if (room.Doors[direction] != null)
             {
-                Physics.IgnoreCollision(collision.collider, doorCollider);
+                Physics2D.IgnoreCollision(collision.collider, doorCollider);
             }
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie")) // 좀비 레이어를 비교
+        {
+            // 좀비와의 충돌 감지
+            isZombieColliding = true;
+            lastDamageTime = Time.time;
         }
     }
 
-    void OnCollisionExit(Collision collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Physics.IgnoreCollision(collision.collider, doorCollider, false);
+            Physics2D.IgnoreCollision(collision.collider, doorCollider, false);
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie")) // 좀비 레이어를 비교
+        {
+            // 좀비와의 충돌 해제
+            isZombieColliding = false;
         }
     }
 
@@ -51,5 +87,11 @@ public class Door : MonoBehaviour
             return 2; // 왼쪽
         else
             return 3; // 아래쪽
+    }
+
+    void DestroyDoor()
+    {
+        // 도어를 파괴
+        Destroy(gameObject);
     }
 }
