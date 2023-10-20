@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8414836665828250887}
   - component: {fileID: 8915717969663577211}
-  - component: {fileID: 8294475479442563379}
   - component: {fileID: 8145141470521122258}
   m_Layer: 0
   m_Name: Sandwitch
@@ -48,33 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 994eb1cc0507c47719951af526a653fd, type: 2}
---- !u!50 &8294475479442563379
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146531271341305263}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &8145141470521122258
 BoxCollider2D:
   m_ObjectHideFlags: 0

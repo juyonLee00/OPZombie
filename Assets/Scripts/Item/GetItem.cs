@@ -12,12 +12,9 @@ public class GetItem : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collider");
         if(collision.gameObject.tag == "GetItem")
         {
-            Debug.Log("collision");
             itemData = collision.gameObject.GetComponent<ItemObject>().GetItemData();
-            Debug.Log(itemData.displayName);
             Inventory.instance.AddItem(itemData);
             Destroy(collision.gameObject);
         }

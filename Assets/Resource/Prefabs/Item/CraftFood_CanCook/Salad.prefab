@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2229411659550812775}
   - component: {fileID: 8137890317743389397}
-  - component: {fileID: 955649310838081401}
   - component: {fileID: 9137336236971453359}
   m_Layer: 0
   m_Name: Salad
@@ -48,33 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 556bea72e6be946e59036f2195be8ff7, type: 2}
---- !u!50 &955649310838081401
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383676293364315971}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &9137336236971453359
 BoxCollider2D:
   m_ObjectHideFlags: 0
