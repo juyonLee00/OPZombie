@@ -9,13 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2394549989914451735}
-  - component: {fileID: 1548767158631997221}
   - component: {fileID: 8937763990454119946}
   - component: {fileID: 1403213069658428719}
   - component: {fileID: 6924435696242294587}
   m_Layer: 0
   m_Name: Bed
-  m_TagString: GetItem
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,33 +37,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1548767158631997221
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382351502681278534}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &8937763990454119946
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,9 +107,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7237459195cb4b17bfa92a78a0da073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 249936781863715530, guid: 6acae5092b431634d949f9aaf5e07b98, type: 3}
   sleepIcon: {fileID: 4394713205497063478}
   fatigueText: {fileID: 6500833819414391334}
-  test: 0
+  playerRenderer: {fileID: 0}
 --- !u!1 &1111149396546002263
 GameObject:
   m_ObjectHideFlags: 0

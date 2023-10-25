@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7437279223973005476}
   - component: {fileID: 1714851812730039275}
   - component: {fileID: 6367399331030738162}
-  - component: {fileID: 8948610341759376529}
   m_Layer: 0
   m_Name: Iron
   m_TagString: GetItem
@@ -93,33 +92,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 2}
   m_EdgeRadius: 0
---- !u!50 &8948610341759376529
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3179742855088898225}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &6216270164479427570
 GameObject:
   m_ObjectHideFlags: 0

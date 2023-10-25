@@ -9,7 +9,7 @@ public class MapGenerator : MonoBehaviour
 
     public GameObject aStarGridPrefab; // AStarGrid ÇÁ¸®ÆÕ Ãß°¡
 
-    private int[,] mapGrid; // ¸Ê ±×¸®µå
+    public int[,] mapGrid; // ¸Ê ±×¸®µå
     public int mapWidth; // ¸Ê °¡·Î Å©±â
     public int mapHeight; // ¸Ê ¼¼·Î Å©±â
     public int totalFloor;
@@ -139,5 +139,10 @@ public class MapGenerator : MonoBehaviour
                 childRenderer.sortingOrder += -Mathf.RoundToInt(childRenderer.transform.position.y * 100 + childRenderer.transform.position.z * 10);
             }
         }
+    }
+
+    public bool IsInside(Vector2 position)
+    {
+        return position.x >= 0 && position.x < mapWidth && position.y >= 0 && position.y < mapHeight;
     }
 }

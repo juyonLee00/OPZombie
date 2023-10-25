@@ -41,5 +41,6 @@
   ![담당자](https://github.com/juyonLee00/OPZombie/assets/142365240/6b248572-7786-4183-a15d-06e39abbd9d0)
 
 ## 플레이 영상
+[시연영상](https://www.youtube.com/watch?v=XeufdSMp2_w)
 
 ## 게임 방법

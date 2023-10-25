@@ -12,13 +12,6 @@ public class Room : MonoBehaviour
         Doors = new Door[4];
     }
 
-    // 각 방향에 따른 문을 설정합니다.
-    public void SetDoor(Door door, int direction)
-    {
-        Doors[direction] = door;
-        door.SetRoom(this);
-    }
-
     private void Start()
     {
         if (config != null)
@@ -72,7 +65,6 @@ public class Room : MonoBehaviour
         return config.itemPrefabs[randomIndex];
     }
 
-
     private Vector3 GetRandomPositionInRoom()
     {
         GameObject parentObject = transform.Find("Grid").gameObject;
@@ -109,8 +101,6 @@ public class Room : MonoBehaviour
 
         return randomPos;
     }
-
-
 
     private GameObject GetRandomMonster()
     {

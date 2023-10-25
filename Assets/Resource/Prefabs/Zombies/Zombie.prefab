@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2007464902354135729}
   m_Layer: 10
   m_Name: Character_Zombie3_1
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 9092969605230632029}
   - component: {fileID: 1698628974546769941}
   - component: {fileID: 2203711783991174172}
+  - component: {fileID: 7099555828765200844}
   m_Layer: 10
   m_Name: Zombie
   m_TagString: Zombie
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cbf39d2baf7d34296ccd659992d08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionDistance: 15
+  detectionDistance: 3
   moveSpeed: 0.5
   originalMoveSpeed: 0.5
 --- !u!61 &9092969605230632029
@@ -170,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009343311, y: 0.1724862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -181,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1}
+  m_Size: {x: 0.479961, y: 0.3419564}
   m_EdgeRadius: 0
 --- !u!212 &1698628974546769941
 SpriteRenderer:
@@ -250,6 +251,33 @@ MonoBehaviour:
   health: 100
   attackDamage: 1
   pauseDuration: 1
+--- !u!50 &7099555828765200844
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156564796046730395}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &4500962596222190017
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +290,7 @@ GameObject:
   - component: {fileID: 4951400696741954349}
   m_Layer: 10
   m_Name: Character_Zombie3_0
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +374,7 @@ GameObject:
   - component: {fileID: 1586358456144663003}
   m_Layer: 10
   m_Name: Character_Zombie3_2
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +458,7 @@ GameObject:
   - component: {fileID: 6249688591333961949}
   m_Layer: 10
   m_Name: Character_Zombie3_3
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

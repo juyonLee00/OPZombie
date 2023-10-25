@@ -5,8 +5,8 @@ using TMPro;
 
 public class Bed : MonoBehaviour
 {
-    //[SerializeField]
-    //GameObject player;
+    [SerializeField]
+    GameObject player;
 
     [SerializeField]
     GameObject sleepIcon;
@@ -14,36 +14,34 @@ public class Bed : MonoBehaviour
     [SerializeField]
     public TextMeshProUGUI fatigueText;
 
-    //private PlayerStatsHandler _playerStatsHandler;
+    private PlayerStatsHandler _playerStatsHandler;
 
-    public int test = 0;
-    float time;
+    public SpriteRenderer playerRenderer;
 
-    /*private void Awake()
+    private void Awake()
     {
         _playerStatsHandler = player.GetComponent<PlayerStatsHandler>();
     }
-    */
+    
 
-    private void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        ChangePlayerStat(true);
-        StartCoroutine("OnSleep");
-        Invoke("CoroutineStop", 11);
-        ChangePlayerStat(true);
+        if (collision.gameObject.name == "Player")
+        {
+            ChangePlayerStat(true);
+            StartCoroutine("OnSleep");
+            Invoke("CoroutineStop", 11);
+            ChangePlayerStat(false);
+        }
     }
+
     IEnumerator OnSleep()
     {
         while (true)
         {
             ShowSleepStat(false);
             yield return new WaitForSeconds(0.5f);
-            Debug.Log(test);
-            test += 6;
-            /*
-             테스트 위해 넣어둠. 삭제 예정
-             _playerStatsHandler.currentStats.fatigability += 6.0;
-             */
+             _playerStatsHandler.currentStats.fatigability += (float)6.0;
             ShowSleepStat(true);
             yield return new WaitForSeconds(0.5f);
         }
@@ -60,17 +58,17 @@ public class Bed : MonoBehaviour
     void ChangePlayerStat(bool isPlayerSleep)
     {
         //플레이어 sleep 상태로 바꾸기
-        //_playerStatsHandler.currentStats.isSleep = isPlayerSleep;
+        _playerStatsHandler.currentStats.isSleep = isPlayerSleep;
 
         //플레이어 오브젝트 비활성화
-        //player.SetActive(isPlayerSleep);
-        //ShowSleepStat(isPlayerSleep);
+        playerRenderer = player.GetComponent<SpriteRenderer>();
+        playerRenderer.enabled = isPlayerSleep;
     }
 
     void ShowSleepStat(bool isShow)
     {
         sleepIcon.SetActive(isShow);
-        fatigueText.gameObject.SetActive(isShow);
+        //fatigueText.gameObject.SetActive(isShow);
     }
 
     
