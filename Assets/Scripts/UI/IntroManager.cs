@@ -12,8 +12,8 @@ public class IntroManager : MonoBehaviour
 
     public void Awake()
     {
-        Cursor.lockState = CursorLockMode.None;
-        //_player.SetActive(false);
+        //Cursor.lockState = CursorLockMode.None;
+        _player.SetActive(false);
     }
 
     public void GameStart()
@@ -22,6 +22,6 @@ public class IntroManager : MonoBehaviour
         _mainCam.SetActive(true);
         _player.SetActive(true);
         _introCanvas.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 }

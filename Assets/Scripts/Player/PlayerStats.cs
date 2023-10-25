@@ -10,7 +10,7 @@ public class PlayerStats
     public float hunger = 100.0f;
     public float thirsty = 100.0f;
     public float strength = 10.0f;
-    public float moveSpeed = 5.0f;
+    public float moveSpeed = 1.0f;
     public float fatigability = 100.0f;
     public float attackSpeed = 1.0f;
     public float zombieInfect = 100.0f;

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 5913504567679531699}
   - component: {fileID: -2007162162894585431}
   - component: {fileID: 7898673002720662284}
+  - component: {fileID: 4468576322305712742}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -37,12 +38,12 @@ Transform:
   m_GameObject: {fileID: 249936781863715530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.404, y: -0.705, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5294456423683240224}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4635350369494476334
 SpriteRenderer:
@@ -177,7 +178,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.5, y: 2.40625}
+  m_Size: {x: 1, y: 2}
   m_Direction: 0
 --- !u!114 &7187935293495303854
 MonoBehaviour:
@@ -250,7 +251,7 @@ MonoBehaviour:
     hunger: 100
     thirsty: 100
     strength: 10
-    moveSpeed: 5
+    moveSpeed: 1
     fatigability: 100
     attackSpeed: 1
     zombieInfect: 100
@@ -379,22 +380,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiSlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 116325509759011995, guid: 375e52c2d189e7e4091c4f026c556091, type: 3}
+  - {fileID: 2444260618016771379, guid: 5acfb573905ac4e4d87a8039b5a10e4a, type: 3}
+  - {fileID: 5579315808410288203, guid: e0625bae5f0a79041b80c68ddf4a5048, type: 3}
+  - {fileID: 3358758706305051897, guid: 5d338985f03a53e469f86e2d37b243fc, type: 3}
   inventoryWindow: {fileID: 7733663516679909716, guid: b63b8ede15a3720409ba0ca1a5cb496f, type: 3}
   dropPosition: {fileID: 6964355141745693083}
   selectedItemName: {fileID: 6416094783503750193, guid: 57b2603c2fc38c143b83321c1b12ef08, type: 3}
@@ -425,6 +414,18 @@ MonoBehaviour:
   onCloseInventory:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4468576322305712742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249936781863715530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 039c5bfc71bfc2f4abf6344f63ca60ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6924029663945348031
 GameObject:
   m_ObjectHideFlags: 0
